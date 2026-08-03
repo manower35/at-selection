@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "design_no": "D.NO - 615",
+    "name": "Girls Sharara Suit Set",
+    "category": "Plazo & Sharara",
+    "size_ratio": "22 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Georgette with Mirror Embroidery",
+    "colors": ["Purple", "Maroon", "Emerald Green", "Navy"],
+    "price_label": "Wholesale Quote Required",
+    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+    "description": "High-quality wholesale girls sharara suit set with intricate embroidery and heavy dupatta."
+  },
+  {
+    "id": 2,
+    "design_no": "D.NO - 783",
+    "name": "Girls Heavy Flared Sharara",
+    "category": "Plazo & Sharara",
+    "size_ratio": "24 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Silk Blend with Zari Work",
+    "colors": ["Royal Purple", "Gold", "Magenta"],
+    "price_label": "Wholesale Quote Required",
+    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80",
+    "description": "Premium festive flared sharara suit for young girls, ideal for wedding and festival season."
+  },
+  {
+    "id": 3,
+    "design_no": "D.NO - 495",
+    "name": "Kids Checkered Cargo Set",
+    "category": "Western Wear",
+    "size_ratio": "18 to 28 (Set of 6 Pcs)",
+    "fabric_type": "Soft Imported Cotton Rib",
+    "colors": ["Beige/Black Check", "Olive Cargo"],
+    "price_label": "Wholesale Quote Required",
+    "image": "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=600&q=80",
+    "description": "Trendy kids 2-piece western top and cargo pants set for daily casual wear."
+  },
+  {
+    "id": 4,
+    "design_no": "D.NO - 195",
+    "name": "Sweet Sixteen Lehenga Choli",
+    "category": "Crop Top & Choli",
+    "size_ratio": "22, 24, 26, 28, 30, 32, 34",
+    "fabric_type": "Organza Printed with Foil Highlights",
+    "colors": ["Baby Peach", "Sky Blue", "Mint Green", "Yellow"],
+    "price_label": "Wholesale Quote Required",
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
+    "description": "Designer crop top lehenga choli with dupattas for girls, top seller in Bombay Frocks collection."
+  },
+  {
+    "id": 5,
+    "design_no": "D.NO - IND-101",
+    "name": "Tricolor Flag Bearer Festive Gown",
+    "category": "🇮🇳 Independence Special",
+    "size_ratio": "20 to 32 (Set of 4 Pcs)",
+    "fabric_type": "Satin Silk with Tricolor Rosette & Pearls",
+    "colors": ["Saffron/White/Green Tricolor"],
+    "price_label": "Special Festival Scheme",
+    "image": "https://images.unsplash.com/photo-1608748010899-18f300247112?auto=format&fit=crop&w=600&q=80",
+    "description": "Special Independence Day and Republic Day ceremonial tri-color gown with matching hair accessories."
+  },
+  {
+    "id": 6,
+    "design_no": "D.NO - 484",
+    "name": "Kids Corsage Satin Ball Gown",
+    "category": "Frock & Dresses",
+    "size_ratio": "18 to 26 (Set of 4 Pcs)",
+    "fabric_type": "Soft Net Layered with Satin Flowers",
+    "colors": ["Rose Pink", "Baby Yellow", "White"],
+    "price_label": "Wholesale Quote Required",
+    "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=600&q=80",
+    "description": "Party wear flared ball gown frock for toddlers and young girls with shoulder flowers."
+  },
+  {
+    "id": 7,
+    "design_no": "D.NO - 520",
+    "name": "Pastel Check Top & Skirt Set",
+    "category": "Western Wear",
+    "size_ratio": "22 to 32 (Set of 6 Pcs)",
+    "fabric_type": "Imported Knit Rib & Denim Skirt",
+    "colors": ["Pastel Lavender", "Mint", "Peach"],
+    "price_label": "Wholesale Quote Required",
+    "image": "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=600&q=80",
+    "description": "Stylish 2-piece western top with pleated denim skirt for girls."
+  },
+  {
+    "id": 8,
+    "design_no": "D.NO - 662",
+    "name": "Glitter Party Net Gown",
+    "category": "Frock & Dresses",
+    "size_ratio": "24 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Glitter Net with Inner Cotton Lining",
+    "colors": ["Maroon", "Navy Blue", "Wine"],
+    "price_label": "Wholesale Quote Required",
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=600&q=80",
+    "description": "Sparkling party frock gown for girls with full flare and comfortable soft cotton lining."
+  }
+]
