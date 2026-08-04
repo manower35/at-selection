@@ -2,50 +2,50 @@
   {
     "id": 1,
     "design_no": "D.NO - ATS-IND-01",
-    "name": "AT SELECTION Independence Day Special Tri-Color Gown",
+    "name": "AT SELECTION Independence Day Special Tri-Color Flared Gown",
     "category": "🇮🇳 Independence Special",
     "size_ratio": "20 to 32 (Set of 4 Pcs)",
-    "fabric_type": "Satin Silk & Net with Tri-Color Rosettes",
-    "colors": ["Saffron/White/Green Tri-Color"],
+    "fabric_type": "Satin Silk & Net with Tri-Color Rosette Belt",
+    "colors": ["Saffron / White / Green Tri-Color"],
     "price_label": "Special Festival Scheme",
     "image": "images/ats_independence_gown.jpg",
-    "description": "Official AT SELECTION ceremonial Tri-Color Independence Day & Republic Day flared gown with matching floral belt."
+    "description": "Official AT SELECTION ceremonial Tri-Color Independence Day & Republic Day flared gown with matching floral waist belt."
   },
   {
     "id": 2,
+    "design_no": "D.NO - ATS-IND-02",
+    "name": "AT SELECTION Pearl Beads Tri-Color Independence Net Frock",
+    "category": "🇮🇳 Independence Special",
+    "size_ratio": "18 to 28 (Set of 4 Pcs)",
+    "fabric_type": "Soft Net with Pearl Beadwork & Flower Corsage",
+    "colors": ["Orange", "White", "Emerald Green"],
+    "price_label": "Special Festival Scheme",
+    "image": "images/ats_tricolor_pearl_frock.jpg",
+    "description": "Happy Independence Day special ceremonial frock with flutter sleeves, pearl embellishments, and floral belt."
+  },
+  {
+    "id": 3,
     "design_no": "D.NO - ATS-783",
-    "name": "AT SELECTION Designer Floral Bombay Flared Gown",
+    "name": "AT SELECTION Designer Ombre Floral Bombay Flared Gown",
     "category": "Frock & Dresses",
     "size_ratio": "22 to 34 (Set of 4 Pcs)",
-    "fabric_type": "Soft Net with Ombre Floral Print & Waist Belt",
+    "fabric_type": "Soft Net with Ombre Floral Print & Metallic Belt",
     "colors": ["Sky Blue Ombre", "Magenta Pink Ombre"],
     "price_label": "Wholesale Quote Required",
     "image": "images/ats_flared_frock_gown.jpg",
     "description": "Luxury party wear flared gown with puff sleeves and metallic waist trim, official AT SELECTION showroom design."
   },
   {
-    "id": 3,
+    "id": 4,
     "design_no": "D.NO - ATS-195",
-    "name": "AT SELECTION Mirror Work Crop Top Lehenga Choli",
+    "name": "AT SELECTION Mirror Work Crop Top Lehenga Choli Set",
     "category": "Crop Top & Choli",
     "size_ratio": "22, 24, 26, 28, 30, 32, 34",
-    "fabric_type": "Silk Chiffon with Mirror Embroidery & Dupatta",
+    "fabric_type": "Silk Chiffon with Heavy Mirror Embroidery & Dupatta",
     "colors": ["Magenta Pink / Yellow", "Teal Blue / Yellow"],
     "price_label": "Wholesale Quote Required",
     "image": "images/ats_crop_top_lehenga.jpg",
-    "description": "Traditional festive Crop Top Lehenga Choli set with heavy border work, direct from AT SELECTION showroom."
-  },
-  {
-    "id": 4,
-    "design_no": "D.NO - ATS-520",
-    "name": "AT SELECTION Floral Print Kurti & Plazo Co-ord Set",
-    "category": "Western Wear",
-    "size_ratio": "18 to 28 (Set of 4 Pcs)",
-    "fabric_type": "Imported Soft Cotton Linen Floral Print",
-    "colors": ["Sky Blue", "Blush Pink", "Lime Green", "Teal"],
-    "price_label": "Wholesale Quote Required",
-    "image": "images/ats_western_coord_set.jpg",
-    "description": "Trendy 2-piece kurti and wide-leg plazo pants set, popular casual western wear collection at AT SELECTION."
+    "description": "Traditional festive Crop Top Lehenga Choli set with heavy silver border work, direct from AT SELECTION showroom."
   },
   {
     "id": 5,
@@ -58,5 +58,65 @@
     "price_label": "Wholesale Quote Required",
     "image": "images/ats_sharara_suit_set.jpg",
     "description": "Elegant 3-piece sharara suit set with peplum top, pleated bottoms, and matching net dupatta from AT SELECTION."
+  },
+  {
+    "id": 6,
+    "design_no": "D.NO - ATS-GHR-88",
+    "name": "AT SELECTION Heavy Neck Embroidery Kurti & Navy Gharara",
+    "category": "Plazo & Sharara",
+    "size_ratio": "22 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Georgette Heavy Zari Kurti with Navy Chiffon Gharara",
+    "colors": ["Royal Crimson Red & Navy Blue"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/ats_red_gharara_set.jpg",
+    "description": "Premium mannequin display festive kurti & gharara set with intricate neck work and silver foil stripes."
+  },
+  {
+    "id": 7,
+    "design_no": "D.NO - ATS-PLZ-395",
+    "name": "AT SELECTION Silk Plazo Suit Set with Printed Dupatta",
+    "category": "Plazo & Sharara",
+    "size_ratio": "22 to 32 (Set of 4 Pcs)",
+    "fabric_type": "Chanderi Silk Kurti with Embroidered Neck & Floral Dupatta",
+    "colors": ["Lilac Purple"],
+    "price_label": "₹395 / Pc Wholesale Rate",
+    "image": "images/ats_purple_plazo_suit.jpg",
+    "description": "Popular wholesale silk plazo suit set featuring neck embroidery and rich floral organza dupatta."
+  },
+  {
+    "id": 8,
+    "design_no": "D.NO - ATS-520",
+    "name": "AT SELECTION Floral Kurti & Wide Plazo Co-ord Set",
+    "category": "Western Wear",
+    "size_ratio": "18 to 28 (Set of 4 Pcs)",
+    "fabric_type": "Imported Soft Cotton Linen Floral Print",
+    "colors": ["Sky Blue", "Blush Pink", "Lime Green", "Teal"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/ats_western_coord_set.jpg",
+    "description": "Trendy 2-piece kurti and wide-leg plazo pants set, popular casual western wear collection at AT SELECTION."
+  },
+  {
+    "id": 9,
+    "design_no": "D.NO - ATS-WST-902",
+    "name": "AT SELECTION Premium Casual Floral Linen Co-ord Set",
+    "category": "Western Wear",
+    "size_ratio": "20 to 30 (Set of 4 Pcs)",
+    "fabric_type": "Breathable Premium Linen with Big Floral Print",
+    "colors": ["Parrot Green", "Mustard Orange", "Ocean Blue", "Maroon"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/ats_floral_casual_coord.jpg",
+    "description": "Official AT SELECTION Premium | Casual | Trendy collection collar shirt top with matching floral trousers."
+  },
+  {
+    "id": 10,
+    "design_no": "D.NO - ATS-DNM-404",
+    "name": "AT SELECTION Kids Denim Shirt with Lace Trim & Flare Pant",
+    "category": "Western Wear",
+    "size_ratio": "18 to 28 (Set of 4 Pcs)",
+    "fabric_type": "Soft Wash Denim with White Lace Patch & Wave Trim",
+    "colors": ["Indigo Denim Blue"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/ats_denim_lace_set.jpg",
+    "description": "Stylish 2-piece kids denim collared shirt top with vintage white crochet lace inlay and flared denim pants."
   }
 ]
