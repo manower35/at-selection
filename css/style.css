@@ -72,6 +72,14 @@ img {
   font-family: 'Cinzel', serif;
 }
 
+.font-bold {
+  font-weight: 700 !important;
+}
+
+.font-semibold {
+  font-weight: 600 !important;
+}
+
 .text-gold {
   color: var(--primary-gold) !important;
 }
@@ -96,12 +104,14 @@ img {
   font-weight: 600;
 }
 
-.text-MD {
+.text-MD,
+.text-md {
   font-size: 1.05rem;
   line-height: 1.6;
 }
 
-.text-SM {
+.text-SM,
+.text-sm {
   font-size: 0.85rem;
 }
 
