@@ -80,7 +80,7 @@ async function loadProductsCatalog() {
   if (!gridContainer) return;
 
   try {
-    const response = await fetch("data/products.json");
+    const response = await fetch(`data/products.json?v=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) throw new Error("Failed to load catalog data");
     allProducts = await response.json();
     renderProducts(allProducts);
@@ -97,7 +97,13 @@ function renderProducts(products) {
   if (!gridContainer) return;
 
   if (products.length === 0) {
-    gridContainer.innerHTML = `<p class="text-muted text-center py-10">No matching garment designs found.</p>`;
+    gridContainer.innerHTML = `
+      <div style="grid-column: 1 / -1; text-align: center; padding: 50px 20px; background: rgba(255,255,255,0.02); border: 1px dashed rgba(212,175,55,0.3); border-radius: 12px;">
+        <i class="fa-solid fa-box-open text-gold" style="font-size: 44px; margin-bottom: 15px;"></i>
+        <h3 class="text-gold font-serif text-MD">AT SELECTION Catalog Ready</h3>
+        <p class="text-SM text-muted" style="margin-top: 6px;">All sample items permanently removed. Ready to display your fresh stock photos!</p>
+      </div>
+    `;
     return;
   }
 
