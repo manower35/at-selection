@@ -94,5 +94,53 @@
     "price_label": "Wholesale Quote Required",
     "image": "images/croptop_turquoise_forest.jpg",
     "description": "Full sleeve turquoise crop top with forest peacock motif embroidery and matching flared lehenga skirt."
+  },
+  {
+    "id": 9,
+    "design_no": "D.NO - ATS-FRK-783",
+    "name": "AT SELECTION Designer Ombre Floral Bombay Flared Gown",
+    "category": "Frock & Dresses",
+    "size_ratio": "22 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Soft Net with Ombre Floral Print & Metallic Belt",
+    "colors": ["Sky Blue Ombre", "Magenta Pink Ombre"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/frock_ombre_bombay.jpg",
+    "description": "Luxury party wear flared gown with puff sleeves and metallic waist trim, official AT SELECTION showroom design."
+  },
+  {
+    "id": 10,
+    "design_no": "D.NO - ATS-FRK-201",
+    "name": "AT SELECTION 4-Color Flower Corsage Festive Party Frock",
+    "category": "Frock & Dresses",
+    "size_ratio": "18 to 28 (Set of 4 Pcs)",
+    "fabric_type": "Satin Silk & Organza Layered Net with Shoulder Flowers",
+    "colors": ["Dark Pink", "Emerald Green", "Light Pink", "Lime Green"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/frock_4color_festive.jpg",
+    "description": "Bright festive party frock set with waist and shoulder flower corsages, popular Dewan Devdi showroom bulk seller."
+  },
+  {
+    "id": 11,
+    "design_no": "D.NO - ATS-FRK-202",
+    "name": "AT SELECTION Ruffle Sleeve Glitter Net Party Gown",
+    "category": "Frock & Dresses",
+    "size_ratio": "22 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Sparkling Glitter Net with Ruffle Flutter Sleeves & Silver Waist Belt",
+    "colors": ["Mauve Pink", "Royal Blue", "Mustard Gold"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/frock_glitter_ruffle.jpg",
+    "description": "Sparkling party net gown with full flare skirt, ruffle flutter sleeves, and metallic silver waist belt."
+  },
+  {
+    "id": 12,
+    "design_no": "D.NO - ATS-FRK-203",
+    "name": "AT SELECTION Rose Flower Collar Satin Party Frock",
+    "category": "Frock & Dresses",
+    "size_ratio": "18 to 28 (Set of 4 Pcs)",
+    "fabric_type": "Rich Satin Silk with Rose Garland Neckline Collar",
+    "colors": ["Navy Blue", "Coral Pink", "Magenta"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/frock_rose_satin.jpg",
+    "description": "Elegant flared satin party frock with big rose flower garland collar neckline, direct from AT SELECTION showroom floor."
   }
 ]
