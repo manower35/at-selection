@@ -265,9 +265,18 @@ img {
   gap: 12px;
 }
 
-.logo-crown-icon {
-  font-size: 28px;
-  color: var(--primary-gold);
+.navbar-logo-img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid var(--primary-gold);
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo-img:hover {
+  transform: scale(1.08);
 }
 
 .logo-text-title {
