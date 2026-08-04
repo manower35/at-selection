@@ -5,6 +5,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
   initFaqAccordion();
+  initLightbox();
   loadProductsCatalog();
 });
 
@@ -104,7 +105,7 @@ function renderProducts(products) {
     .map(
       (p) => `
     <div class="product-card" data-category="${p.category}">
-      <div class="product-img-wrapper">
+      <div class="product-img-wrapper" onclick="handleOpenLightbox(${p.id})">
         <span class="product-category-tag">${p.category}</span>
         <img src="${p.image}" alt="${p.name}" class="product-img" loading="lazy" />
       </div>
@@ -187,3 +188,51 @@ window.handleAddProductToCart = function (productId) {
     });
   }
 };
+
+/* --------------------------------------------------------------------------
+   5. LIGHTBOX MODAL EVENT HANDLERS
+   -------------------------------------------------------------------------- */
+function initLightbox() {
+  const modal = document.getElementById("lightbox-modal");
+  const closeBtn = document.getElementById("lightbox-close-btn");
+
+  if (!modal) return;
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeLightbox);
+  }
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeLightbox();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("active")) {
+      closeLightbox();
+    }
+  });
+}
+
+window.handleOpenLightbox = function (productId) {
+  const product = allProducts.find((p) => p.id === productId);
+  if (!product) return;
+
+  const modal = document.getElementById("lightbox-modal");
+  const modalImg = document.getElementById("lightbox-img");
+  const caption = document.getElementById("lightbox-caption");
+
+  if (modal && modalImg && caption) {
+    modalImg.src = product.image;
+    caption.innerHTML = `<strong class="text-gold" style="font-size: 16px;">${product.design_no}</strong> — ${product.name} (${product.category})`;
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+  }
+};
+
+function closeLightbox() {
+  const modal = document.getElementById("lightbox-modal");
+  if (modal) {
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
+  }
+}
