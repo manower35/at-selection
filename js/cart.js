@@ -174,14 +174,21 @@ class WholesaleCart {
         background: #D4AF37; color: #000; padding: 12px 20px;
         border-radius: 8px; font-weight: 700; font-size: 13px;
         box-shadow: 0 4px 20px rgba(0,0,0,0.5); z-index: 9999;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        opacity: 0; transform: translateY(10px);
+        pointer-events: none;
       `;
       document.body.appendChild(toast);
     }
     toast.textContent = message;
-    toast.style.opacity = "1";
-    setTimeout(() => {
+    requestAnimationFrame(() => {
+      toast.style.opacity = "1";
+      toast.style.transform = "translateY(0)";
+    });
+    if (this.toastTimeout) clearTimeout(this.toastTimeout);
+    this.toastTimeout = setTimeout(() => {
       toast.style.opacity = "0";
+      toast.style.transform = "translateY(10px)";
     }, 2500);
   }
 }
