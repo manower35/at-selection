@@ -391,7 +391,7 @@ img {
 
 .hero .container {
   background: linear-gradient(to right, rgba(18, 18, 18, 0.95) 50%, rgba(18, 18, 18, 0.4)),
-              url('../images/hero_garments_bg_1785847848788.jpg') no-repeat center right / cover;
+              url('../images/ats_flared_frock_gown.jpg') no-repeat center right / cover;
   min-height: 480px;
   border-radius: 16px;
   border: 1px solid var(--card-border);
@@ -771,7 +771,7 @@ img {
     padding: 30px 20px;
     min-height: 550px;
     background: linear-gradient(to bottom, rgba(18, 18, 18, 0.92) 60%, rgba(18, 18, 18, 0.7)),
-                url('../images/hero_garments_bg_1785847848788.jpg') no-repeat center center / cover;
+                url('../images/ats_flared_frock_gown.jpg') no-repeat center center / cover;
     text-align: center;
   }
   .hero-buttons {
