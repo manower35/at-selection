@@ -46,5 +46,53 @@
     "price_label": "Special Festival Scheme",
     "image": "images/ind_saffron_gown.jpg",
     "description": "Ceremonial Saffron Orange Independence Day flared net gown with gold floral zari embroidery applique."
+  },
+  {
+    "id": 5,
+    "design_no": "D.NO - ATS-CP-782",
+    "name": "AT SELECTION Heavy Peacock Embroidered Crop Top Lehenga Choli",
+    "category": "Crop Top & Choli",
+    "size_ratio": "22 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Silk Chiffon with Heavy Gold Peacock Thread & Mirror Embroidery",
+    "colors": ["Peacock Blue / Teal"],
+    "price_label": "₹782 / Pc Wholesale Rate",
+    "image": "images/croptop_teal_peacock.jpg",
+    "description": "Heavy festive Crop Top Lehenga Choli with royal peacock skirt border embroidery and net dupatta."
+  },
+  {
+    "id": 6,
+    "design_no": "D.NO - ATS-CP-102",
+    "name": "AT SELECTION Peach Mirror Work Crop Top & Bottle Green Lehenga",
+    "category": "Crop Top & Choli",
+    "size_ratio": "22 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Silk Chiffon with Mirror Work Top & Zari Border Skirt",
+    "colors": ["Peach & Bottle Green"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/croptop_peach_green.jpg",
+    "description": "Festive Crop Top Lehenga Choli with mirror embroidered top, pleated dark green lehenga, and peach dupatta."
+  },
+  {
+    "id": 7,
+    "design_no": "D.NO - ATS-CP-103",
+    "name": "AT SELECTION Dark Green Crop Top & Mustard Yellow Pleated Lehenga",
+    "category": "Crop Top & Choli",
+    "size_ratio": "22 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Silk Satin Top with Zari Beads & Pleated Jacquard Lehenga Skirt",
+    "colors": ["Dark Green & Mustard Yellow"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/croptop_mustard_green.jpg",
+    "description": "Traditional Crop Top Lehenga set featuring dark green embroidered blouse and rich mustard yellow pleated lehenga skirt."
+  },
+  {
+    "id": 8,
+    "design_no": "D.NO - ATS-CP-104",
+    "name": "AT SELECTION Turquoise Forest Peacock Embroidery Lehenga Choli",
+    "category": "Crop Top & Choli",
+    "size_ratio": "22 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Full Sleeve Organza Silk with Forest Peacock & Floral Zari Threadwork",
+    "colors": ["Turquoise Blue"],
+    "price_label": "Wholesale Quote Required",
+    "image": "images/croptop_turquoise_forest.jpg",
+    "description": "Full sleeve turquoise crop top with forest peacock motif embroidery and matching flared lehenga skirt."
   }
 ]
