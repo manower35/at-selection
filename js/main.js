@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
   initFaqAccordion();
   initLightbox();
+  initHeroSlider();
   loadProductsCatalog();
 });
 
@@ -306,5 +307,147 @@ function closeLightbox() {
     modal.setAttribute("aria-hidden", "true");
   }
 }
+
+/* --------------------------------------------------------------------------
+   6. 5-SECOND AUTO-ROTATING HERO COLLECTION CAROUSEL
+   -------------------------------------------------------------------------- */
+function initHeroSlider() {
+  const sliderContainer = document.getElementById("hero-slider");
+  if (!sliderContainer) return;
+
+  const slides = sliderContainer.querySelectorAll(".hero-slide");
+  const dots = sliderContainer.querySelectorAll(".slider-dot");
+  const prevBtn = document.getElementById("slider-prev-btn");
+  const nextBtn = document.getElementById("slider-next-btn");
+  const progressFill = document.getElementById("slider-progress-fill");
+
+  if (!slides || slides.length === 0) return;
+
+  let currentSlide = 0;
+  const totalSlides = slides.length;
+  const INTERVAL_MS = 5000; // Exact 5-second interval
+  let slideTimer = null;
+  let progressAnimation = null;
+  let progressStart = 0;
+
+  function showSlide(index) {
+    // Wrap around index
+    currentSlide = (index + totalSlides) % totalSlides;
+
+    // Update slides
+    slides.forEach((slide, i) => {
+      if (i === currentSlide) {
+        slide.classList.add("active");
+      } else {
+        slide.classList.remove("active");
+      }
+    });
+
+    // Update dot indicators
+    dots.forEach((dot, i) => {
+      if (i === currentSlide) {
+        dot.classList.add("active");
+      } else {
+        dot.classList.remove("active");
+      }
+    });
+
+    // Restart progress bar animation
+    resetProgress();
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  function resetProgress() {
+    if (progressFill) {
+      progressFill.style.transition = "none";
+      progressFill.style.width = "0%";
+      void progressFill.offsetWidth; // Force reflow
+      progressFill.style.transition = `width ${INTERVAL_MS}ms linear`;
+      progressFill.style.width = "100%";
+    }
+  }
+
+  function startAutoPlay() {
+    stopAutoPlay();
+    resetProgress();
+    slideTimer = setInterval(nextSlide, INTERVAL_MS);
+  }
+
+  function stopAutoPlay() {
+    if (slideTimer) {
+      clearInterval(slideTimer);
+      slideTimer = null;
+    }
+    if (progressFill) {
+      progressFill.style.transition = "none";
+      progressFill.style.width = "0%";
+    }
+  }
+
+  // Button Click Handlers
+  if (nextBtn) {
+    nextBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      nextSlide();
+      startAutoPlay();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      prevSlide();
+      startAutoPlay();
+    });
+  }
+
+  // Dot Indicator Handlers
+  dots.forEach((dot) => {
+    dot.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const targetIndex = parseInt(dot.getAttribute("data-slide")) || 0;
+      showSlide(targetIndex);
+      startAutoPlay();
+    });
+  });
+
+  // Pause on Mouse Hover / Resume on Leave
+  sliderContainer.addEventListener("mouseenter", stopAutoPlay);
+  sliderContainer.addEventListener("mouseleave", startAutoPlay);
+
+  // Mobile Touch Swipe Support
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  sliderContainer.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    stopAutoPlay();
+  }, { passive: true });
+
+  sliderContainer.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diffX = touchStartX - touchEndX;
+    if (Math.abs(diffX) > 40) {
+      if (diffX > 0) {
+        nextSlide(); // Swiped left -> next
+      } else {
+        prevSlide(); // Swiped right -> prev
+      }
+    }
+    startAutoPlay();
+  }, { passive: true });
+
+  // Initial Startup
+  showSlide(0);
+  startAutoPlay();
+}
+
 
 

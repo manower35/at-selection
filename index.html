@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AT SELECTION | B2B Wholesale Garments Distributor | Dewan Devdi, Hyderabad</title>
   <meta name="description" content="Leading stockist and manufacturer of Bombay Frocks, Western Wear, Ghararas, and Fancy Girls Wear in City Plaza Complex, Dewan Devdi, Hyderabad. Bulk order Pan-India shipping." />
   <meta name="keywords" content="AT Selection, Wholesale Kidswear Hyderabad, Dewan Devdi Garments, Bombay Frocks Wholesale, City Plaza Hyderabad, Girls Frock Wholesaler" />
+
+  <!-- OpenGraph / WhatsApp Visual Rich Link Preview Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AT SELECTION Wholesale" />
+  <meta property="og:title" content="AT SELECTION | Wholesale Garments Distributor | Hyderabad" />
+  <meta property="og:description" content="View latest B2B Catalog & Bulk Design Sets (Bombay Frocks, Western Wear, Cargo Pants). Same-day Dewan Devdi dispatch." />
+  <meta property="og:image" content="https://at-selection-7q0tp6w7p-manower35-3331s-projects.vercel.app/images/ats_logo.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AT SELECTION Wholesale Garments" />
+  <meta name="twitter:description" content="Premier stockist of Bombay Frocks & Western Wear in Dewan Devdi, Hyderabad." />
+  <meta name="twitter:image" content="https://at-selection-7q0tp6w7p-manower35-3331s-projects.vercel.app/images/ats_logo.jpg" />
 
   <!-- Google Fonts: 'Cinzel' (Serif) & 'Poppins' (Clean B2B Specs) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,7 +56,7 @@
     <div class="container">
       <!-- Brand Logo -->
       <a href="index.html" class="logo-box">
-        <img src="images/ats_logo.jpg" alt="AT SELECTION Logo" class="navbar-logo-img" />
+        <img src="images/ats_logo.jpg" alt="AT SELECTION Logo" class="navbar-logo-img" onerror="this.onerror=null; this.src='images/ats_logo.jpg';" />
         <div>
           <h1 class="logo-text-title">AT SELECTION</h1>
           <p class="logo-text-subtitle">Wholesale Readymade Garments</p>
@@ -53,7 +67,6 @@
       <div class="main-menu">
         <ul>
           <li><a href="#catalog">Catalog</a></li>
-          <li><a href="#schemes">Festive Schemes</a></li>
           <li><a href="#showroom">Showroom Tour</a></li>
           <li><a href="#faq">Trade FAQ</a></li>
         </ul>
@@ -88,7 +101,6 @@
     </div>
     <ul>
       <li><a href="#catalog"><i class="fa-solid fa-shirt text-gold"></i> Digital Catalog</a></li>
-      <li><a href="#schemes"><i class="fa-solid fa-gift text-gold"></i> Festive Schemes</a></li>
       <li><a href="#showroom"><i class="fa-solid fa-store text-gold"></i> Showroom Tour</a></li>
       <li><a href="#faq"><i class="fa-solid fa-circle-question text-gold"></i> Trade FAQ</a></li>
       <li style="margin-top: 20px;">
@@ -100,27 +112,107 @@
   </div>
 
   <!-- ==========================================================================
-       3. HERO BANNER
+       3. HERO BANNER WITH 5-SEC ROTATING COLLECTION SHOWCASE
        ========================================================================== -->
   <section class="hero">
-    <div class="container">
+    <div class="container hero-grid-wrapper">
+      <!-- Left Column: B2B Wholesale Details & Action CTAs -->
       <div class="hero-content">
-        <span class="badge-gold" style="margin-bottom: 15px; display: inline-block;">
+        <span class="badge-gold hero-badge">
           <i class="fa-solid fa-award"></i> Premier Wholesale Manufacturer • Dewan Devdi, Hyderabad
         </span>
-        <h1 class="text-XXL font-serif text-gold">
-          Direct Wholesale Stockist & Manufacturer of Girls Wear
+        <h1 class="hero-title font-serif text-gold">
+          Direct Wholesale Stockist &amp; Manufacturer of Girls Wear
         </h1>
-        <p class="text-MD text-muted" style="margin-top: 15px;">
-          Explore premium collections of Bombay Frocks, Western Cargo Sets, Ghararas, Crop Tops, and Festive Edits. Supplying retail store owners across AP, Telangana, and Pan-India.
+        <p class="hero-subtitle text-muted">
+          Explore premium ready-stock collections of Festive Frocks, Crop Tops, Bombay Dresses, and Western Sets. Supplying retail store owners across AP, Telangana, and Pan-India.
         </p>
+
+        <!-- Quick B2B Trust Highlights -->
+        <div class="hero-quick-specs">
+          <div class="spec-pill"><i class="fa-solid fa-layer-group text-gold"></i> 269+ Ready Stock</div>
+          <div class="spec-pill"><i class="fa-solid fa-truck-fast text-gold"></i> Same-Day Dispatch</div>
+          <div class="spec-pill"><i class="fa-solid fa-circle-check text-gold"></i> B2B Set Bundles</div>
+        </div>
+
         <div class="hero-buttons">
           <a href="#catalog" class="btn btn-gold">
             <i class="fa-solid fa-store"></i> View Digital Catalog
           </a>
-          <a href="https://wa.me/918019924400" target="_blank" class="btn btn-outline-gold">
-            <i class="fa-brands fa-whatsapp"></i> Get Price Sheet on WhatsApp
+          <a href="https://wa.me/918019924400?text=Hi%20Syed%20Ahmer,%20I%20want%20to%20book%20a%20Live%20Showroom%20Video%20Call%20to%20view%20stock%20and%20fabrics." target="_blank" class="btn btn-video-tour">
+            <i class="fa-solid fa-video"></i> Live Video Call Tour
           </a>
+          <a href="https://wa.me/918019924400" target="_blank" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Get Price Sheet
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: 5-Second Auto-Rotating Collection Carousel -->
+      <div class="hero-slider-container">
+        <div class="hero-slider" id="hero-slider" aria-label="Latest Collection Showcase">
+          <!-- Slide 1: Latest Gown with Sequin Koti -->
+          <div class="hero-slide active" data-index="0">
+            <img src="images/frock_14060c.jpg" alt="Design 14060-C Pleated Festive Gown with Sequin Koti" loading="eager" />
+            <div class="slide-caption-badge">
+              <span class="slide-tag">✨ NEW ARRIVAL</span>
+              <strong class="slide-title">Design 14060-C (Pleated Gown &amp; Koti)</strong>
+            </div>
+          </div>
+
+          <!-- Slide 2: Shimmer Net Frock Pink -->
+          <div class="hero-slide" data-index="1">
+            <img src="images/frock_dno131_pink.jpg" alt="Design D.NO-131 Baby Pink Shimmer Net Bombay Frock" loading="lazy" />
+            <div class="slide-caption-badge">
+              <span class="slide-tag">👑 FESTIVE FROCK</span>
+              <strong class="slide-title">Design D.NO-131 (Baby Pink Flare)</strong>
+            </div>
+          </div>
+
+          <!-- Slide 3: Western Wear 11921 -->
+          <div class="hero-slide" data-index="2">
+            <img src="images/western_11921_v2.jpg" alt="Design 11921 Embroidered Western Wear Shirt & Flared Pants Set" loading="lazy" />
+            <div class="slide-caption-badge">
+              <span class="slide-tag">🌟 TRENDING WESTERN</span>
+              <strong class="slide-title">Design 11921 (Embroidered Set)</strong>
+            </div>
+          </div>
+
+          <!-- Slide 4: Teal Peacock Crop Top -->
+          <div class="hero-slide" data-index="3">
+            <img src="images/croptop_fl20226615_teal.jpg" alt="Teal Peacock Zari Crop Top & Choli" loading="lazy" />
+            <div class="slide-caption-badge">
+              <span class="slide-tag">💎 ETHNIC CHOLI</span>
+              <strong class="slide-title">Teal Peacock Zari Crop Top</strong>
+            </div>
+          </div>
+
+          <!-- Slide 5: Shimmer Net Frock Blue -->
+          <div class="hero-slide" data-index="4">
+            <img src="images/frock_dno131_blue.jpg" alt="Design D.NO-131 Sky Blue Shimmer Net Frock" loading="lazy" />
+            <div class="slide-caption-badge">
+              <span class="slide-tag">👗 BOMBAY FROCK</span>
+              <strong class="slide-title">Design D.NO-131 (Sky Blue Flare)</strong>
+            </div>
+          </div>
+
+          <!-- Navigation Arrow Buttons -->
+          <button class="slider-arrow prev" id="slider-prev-btn" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="slider-arrow next" id="slider-next-btn" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+          <!-- 5-Second Interval Progress Bar -->
+          <div class="slider-progress-bar">
+            <div class="slider-progress-fill" id="slider-progress-fill"></div>
+          </div>
+
+          <!-- Dot Indicators -->
+          <div class="slider-dots" id="slider-dots">
+            <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
+            <button class="slider-dot" data-slide="3" aria-label="Slide 4"></button>
+            <button class="slider-dot" data-slide="4" aria-label="Slide 5"></button>
+          </div>
         </div>
       </div>
     </div>
@@ -165,68 +257,7 @@
   </section>
 
   <!-- ==========================================================================
-       5. FESTIVE PURCHASE REWARD SCHEMES
-       ========================================================================== -->
-  <section class="py-12 bg-dark" id="schemes">
-    <div class="container-sm">
-      <div class="text-center">
-        <span class="badge-gold">FESTIVAL INCENTIVES</span>
-        <h2 class="text-XL font-serif text-gold" style="margin-top: 10px;">
-          Independence & Festive Purchase Reward Schemes
-        </h2>
-        <p class="text-SM text-muted" style="margin-top: 8px;">
-          Special bulk order rewards valid for cash purchases placed at our Dewan Devdi showroom.
-        </p>
-      </div>
-
-      <div class="schemes-grid">
-        <!-- Scheme Card 1 -->
-        <div class="scheme-card">
-          <div>
-            <span class="badge-gold">SCHEME TIER 1</span>
-            <h3 class="text-XL text-gold font-serif" style="margin-top: 10px;">Purchase ₹50,000 & Above</h3>
-            <p style="font-size: 24px; font-weight: 700; color: #fff; margin: 10px 0;">
-              FREE <span class="text-gold">Smartwatch</span>
-            </p>
-            <ul>
-              <li><i class="fa-solid fa-check text-gold"></i> Valid on full cash / spot payment</li>
-              <li><i class="fa-solid fa-check text-gold"></i> Applicable across all product categories</li>
-              <li><i class="fa-solid fa-check text-gold"></i> Pan-India express transport dispatch</li>
-              <li><i class="fa-solid fa-check text-gold"></i> Guaranteed zero fabric defect stock</li>
-            </ul>
-          </div>
-          <a href="https://wa.me/918019924400?text=Hi%20Syed%20Ahmer,%20I%20want%20to%20claim%20Tier%201%20Scheme%20(50k%2B)" 
-             target="_blank" class="btn btn-gold btn-block" style="margin-top: 20px;">
-            Claim ₹50,000 Scheme
-          </a>
-        </div>
-
-        <!-- Scheme Card 2 (Featured) -->
-        <div class="scheme-card featured">
-          <div>
-            <span class="badge-gold" style="background: var(--primary-gold); color: #000;">POPULAR CHOICE</span>
-            <h3 class="text-XL text-gold font-serif" style="margin-top: 10px;">Purchase ₹1,00,000 & Above</h3>
-            <p style="font-size: 24px; font-weight: 700; color: #fff; margin: 10px 0;">
-              FREE <span class="text-gold">Trolley Bag</span>
-            </p>
-            <ul>
-              <li><i class="fa-solid fa-check text-gold"></i> Get 1 Premium Travel Trolley Bag FREE</li>
-              <li><i class="fa-solid fa-check text-gold"></i> Priority same-day transport booking</li>
-              <li><i class="fa-solid fa-check text-gold"></i> Full set ratio selection (22 to 34)</li>
-              <li><i class="fa-solid fa-check text-gold"></i> Dedicated showroom account manager</li>
-            </ul>
-          </div>
-          <a href="https://wa.me/918019924400?text=Hi%20Syed%20Ahmer,%20I%20want%20to%20claim%20Tier%202%20Scheme%20(1%20Lakh%2B)" 
-             target="_blank" class="btn btn-gold btn-block" style="margin-top: 20px;">
-            Claim ₹1,00,000 Scheme
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       6. VIRTUAL SHOWROOM WAREHOUSE TOUR
+       5. VIRTUAL SHOWROOM WAREHOUSE TOUR
        ========================================================================== -->
   <section class="py-12 bg-surface" id="showroom">
     <div class="container">
@@ -240,21 +271,33 @@
 
       <div class="showroom-grid">
         <div class="showroom-photo-card">
-          <img src="images/ats_showroom_entry.jpg" alt="AT SELECTION Main Showroom Golden Arch Logo" />
+          <img src="images/ats_showroom_entry.jpg" alt="AT SELECTION Main Showroom Golden Arch Logo" onerror="this.onerror=null; this.src='images/ats_logo.jpg';" />
           <div class="showroom-photo-caption">AT SELECTION Main Showroom Entry & Golden Arch Logo</div>
         </div>
         <div class="showroom-photo-card">
-          <img src="images/ats_showroom_independence.jpg" alt="Independence Special Display Counter" />
+          <img src="images/ats_showroom_independence.jpg" alt="Independence Special Display Counter" onerror="this.onerror=null; this.src='images/ats_logo.jpg';" />
           <div class="showroom-photo-caption">Independence Special Display Counter at Dewan Devdi</div>
         </div>
         <div class="showroom-photo-card">
-          <img src="images/ats_showroom_ethnic_wall.jpg" alt="AT SELECTION Premium Casual Trendy Wall" />
+          <img src="images/ats_showroom_ethnic_wall.jpg" alt="AT SELECTION Premium Casual Trendy Wall" onerror="this.onerror=null; this.src='images/ats_logo.jpg';" />
           <div class="showroom-photo-caption">AT SELECTION Premium • Casual • Trendy Stock Wall</div>
         </div>
         <div class="showroom-photo-card">
-          <img src="images/ats_showroom_mannequins.jpg" alt="Mannequin Display Racks" />
+          <img src="images/ats_showroom_mannequins.jpg" alt="Mannequin Display Racks" onerror="this.onerror=null; this.src='images/ats_logo.jpg';" />
           <div class="showroom-photo-caption">Festive Mannequin Display & Zari Stock Racks</div>
         </div>
+      <!-- Live Showroom Video Call Feature Card -->
+      <div class="live-video-card" style="margin-top: 35px; background: linear-gradient(135deg, rgba(212,175,55,0.12) 0%, rgba(37,211,102,0.15) 100%); border: 1px solid var(--primary-gold); border-radius: 12px; padding: 25px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+        <div style="max-width: 600px;">
+          <span class="badge-gold" style="background: var(--whatsapp-green); color: #000; font-weight: 700;"><i class="fa-solid fa-circle-dot" style="color: #fff; font-size: 8px;"></i> LIVE SHOWROOM VIDEO SHOPPING</span>
+          <h3 class="text-XL font-serif text-gold" style="margin-top: 8px;">Can't Visit Dewan Devdi in Person?</h3>
+          <p class="text-SM text-muted" style="margin-top: 6px;">
+            Out-of-station retailers across AP, Telangana, Karnataka, & Maharashtra can view live showroom stock, fabric flair, and zari embroidery in real-time via WhatsApp Video Call with <strong>Syed Ahmer</strong>.
+          </p>
+        </div>
+        <a href="https://wa.me/918019924400?text=Hi%20Syed%20Ahmer,%20I%20want%20to%20start%20a%20Live%20WhatsApp%20Video%20Call%20to%20view%20stock%20at%20Dewan%20Devdi." target="_blank" class="btn btn-whatsapp" style="font-size: 14px; padding: 12px 22px;">
+          <i class="fa-solid fa-video"></i> Start WhatsApp Video Call (+91 80199 24400)
+        </a>
       </div>
     </div>
   </section>
