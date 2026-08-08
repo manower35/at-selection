@@ -114,7 +114,7 @@ function renderProducts(products) {
     "Frock & Dresses",
     "Plazo & Sharara",
     "Western Wear",
-    "Independence Special"
+    "Festive Special"
   ];
 
   const grouped = {};
