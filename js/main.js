@@ -289,7 +289,7 @@ window.handleOpenLightbox = function (productId) {
       <div style="text-align: center;">
         <strong class="text-gold" style="font-size: 16px;">${product.design_no}</strong> — ${product.name} (${product.category})
         <div style="margin-top: 10px;">
-          <a href="https://wa.me/918019924400?text=Hi%20Syed%20Ahmer,%20I%20want%20to%20see%20${encodeURIComponent(product.design_no)}%20(${encodeURIComponent(product.name)})%20on%20a%20Live%20WhatsApp%20Video%20Call." target="_blank" class="btn btn-whatsapp text-SM" style="display: inline-flex; padding: 6px 14px;">
+          <a href="https://wa.me/919701515477?text=Hi%20Syed%20Ahmer,%20I%20want%20to%20see%20${encodeURIComponent(product.design_no)}%20(${encodeURIComponent(product.name)})%20on%20a%20Live%20WhatsApp%20Video%20Call." target="_blank" class="btn btn-whatsapp text-SM" style="display: inline-flex; padding: 6px 14px;">
             <i class="fa-solid fa-video"></i> View ${product.design_no} on Live Video Call
           </a>
         </div>

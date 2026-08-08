@@ -110,7 +110,7 @@ class WholesaleCart {
       .map(
         (item) => `
       <div class="cart-item-row">
-        <img src="${item.image}" alt="${item.name}" class="cart-item-img" />
+        <img src="${item.image}" alt="${item.name}" class="cart-item-img" onerror="this.onerror=null; this.src='images/ats_logo.jpg';" />
         <div style="flex: 1;">
           <p style="font-weight: 700; color: #D4AF37;">${item.design_no}</p>
           <p style="color: #fff; font-weight: 500;">${item.name}</p>
@@ -145,10 +145,13 @@ class WholesaleCart {
     if (phone) message += `*Phone:* ${phone}\n`;
     message += `\n*Requested Design Sets (${this.getTotalSets()} Sets Total):*\n\n`;
 
+    const origin = window.location.origin;
     this.items.forEach((item, index) => {
-      message += `${index + 1}. *${item.design_no}* (${item.name})\n`;
+      const fullImgUrl = item.image.startsWith("http") ? item.image : `${origin}/${item.image}`;
+      message += `${index + 1}. *Code-${item.design_no}* (${item.name})\n`;
       message += `   • Size Ratio: ${item.size_ratio}\n`;
-      message += `   • Quantity: *${item.sets_count} Set(s)*\n\n`;
+      message += `   • Quantity: *${item.sets_count} Set(s)*\n`;
+      message += `   • Photo Preview: ${fullImgUrl}\n\n`;
     });
 
     message += `Please confirm stock availability, size colors, and wholesale pricing.`;
@@ -159,7 +162,7 @@ class WholesaleCart {
     const text = this.generateWhatsAppMessage();
     if (!text) return;
 
-    const primaryLine = "918019924400"; // Syed Ahmer / AT Selection Primary Wholesale Line
+    const primaryLine = "919701515477"; // Syed Ahmer / AT Selection Primary Wholesale Line
     const whatsappUrl = `https://wa.me/${primaryLine}?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, "_blank");
   }
