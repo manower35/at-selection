@@ -1,146 +1,184 @@
 [
   {
-    "id": 1,
-    "design_no": "D.NO - ATS-IND-01",
-    "name": "AT SELECTION Independence Special Tri-Color Tiered Gown",
-    "category": "Independence Special",
-    "size_ratio": "20 to 32 (Set of 4 Pcs)",
-    "fabric_type": "Satin Silk & Soft Net with Tri-Color Rosette Belt",
-    "colors": ["Saffron / White / Green Tri-Color"],
-    "price_label": "Special Festival Scheme",
-    "image": "images/ind_tricolor_gown.jpg",
-    "description": "Official AT SELECTION ceremonial Tri-Color Independence Day & Republic Day flared gown with matching floral waist belt."
-  },
-  {
-    "id": 2,
-    "design_no": "D.NO - ATS-IND-02",
-    "name": "AT SELECTION Emerald Green Independence Net Flared Gown",
-    "category": "Independence Special",
-    "size_ratio": "20 to 32 (Set of 4 Pcs)",
-    "fabric_type": "Soft Net with Floral Patchwork Applique & Satin Belt",
-    "colors": ["Emerald Green"],
-    "price_label": "Special Festival Scheme",
-    "image": "images/ind_green_gown.jpg",
-    "description": "Ceremonial Emerald Green Independence Day flared net gown with floral shoulder applique and satin belt."
-  },
-  {
-    "id": 3,
-    "design_no": "D.NO - ATS-IND-03",
-    "name": "AT SELECTION Pure White Independence Net Flared Gown",
-    "category": "Independence Special",
-    "size_ratio": "20 to 32 (Set of 4 Pcs)",
-    "fabric_type": "Soft Net with Flower Corsage & Satin Belt",
-    "colors": ["Pure White"],
-    "price_label": "Special Festival Scheme",
-    "image": "images/ind_white_gown.jpg",
-    "description": "Ceremonial Pure White Independence Day flared net gown with flower waist corsage."
-  },
-  {
-    "id": 4,
-    "design_no": "D.NO - ATS-IND-04",
-    "name": "AT SELECTION Saffron Orange Independence Net Flared Gown",
-    "category": "Independence Special",
-    "size_ratio": "20 to 32 (Set of 4 Pcs)",
-    "fabric_type": "Soft Net with Gold Floral Zari Embroidery Applique",
-    "colors": ["Deep Saffron Orange"],
-    "price_label": "Special Festival Scheme",
-    "image": "images/ind_saffron_gown.jpg",
-    "description": "Ceremonial Saffron Orange Independence Day flared net gown with gold floral zari embroidery applique."
-  },
-  {
-    "id": 5,
-    "design_no": "D.NO - ATS-CP-782",
-    "name": "AT SELECTION Heavy Peacock Embroidered Crop Top Lehenga Choli",
-    "category": "Crop Top & Choli",
-    "size_ratio": "22 to 34 (Set of 4 Pcs)",
-    "fabric_type": "Silk Chiffon with Heavy Gold Peacock Thread & Mirror Embroidery",
-    "colors": ["Peacock Blue / Teal"],
-    "price_label": "₹782 / Pc Wholesale Rate",
-    "image": "images/croptop_teal_peacock.jpg",
-    "description": "Heavy festive Crop Top Lehenga Choli with royal peacock skirt border embroidery and net dupatta."
-  },
-  {
-    "id": 6,
-    "design_no": "D.NO - ATS-CP-102",
-    "name": "AT SELECTION Peach Mirror Work Crop Top & Bottle Green Lehenga",
-    "category": "Crop Top & Choli",
-    "size_ratio": "22 to 34 (Set of 4 Pcs)",
-    "fabric_type": "Silk Chiffon with Mirror Work Top & Zari Border Skirt",
-    "colors": ["Peach & Bottle Green"],
-    "price_label": "Wholesale Quote Required",
-    "image": "images/croptop_peach_green.jpg",
-    "description": "Festive Crop Top Lehenga Choli with mirror embroidered top, pleated dark green lehenga, and peach dupatta."
-  },
-  {
-    "id": 7,
-    "design_no": "D.NO - ATS-CP-103",
-    "name": "AT SELECTION Dark Green Crop Top & Mustard Yellow Pleated Lehenga",
-    "category": "Crop Top & Choli",
-    "size_ratio": "22 to 34 (Set of 4 Pcs)",
-    "fabric_type": "Silk Satin Top with Zari Beads & Pleated Jacquard Lehenga Skirt",
-    "colors": ["Dark Green & Mustard Yellow"],
-    "price_label": "Wholesale Quote Required",
-    "image": "images/croptop_mustard_green.jpg",
-    "description": "Traditional Crop Top Lehenga set featuring dark green embroidered blouse and rich mustard yellow pleated lehenga skirt."
-  },
-  {
-    "id": 8,
-    "design_no": "D.NO - ATS-CP-104",
-    "name": "AT SELECTION Turquoise Forest Peacock Embroidery Lehenga Choli",
-    "category": "Crop Top & Choli",
-    "size_ratio": "22 to 34 (Set of 4 Pcs)",
-    "fabric_type": "Full Sleeve Organza Silk with Forest Peacock & Floral Zari Threadwork",
-    "colors": ["Turquoise Blue"],
-    "price_label": "Wholesale Quote Required",
-    "image": "images/croptop_turquoise_forest.jpg",
-    "description": "Full sleeve turquoise crop top with forest peacock motif embroidery and matching flared lehenga skirt."
-  },
-  {
-    "id": 9,
-    "design_no": "D.NO - ATS-FRK-783",
-    "name": "AT SELECTION Designer Ombre Floral Bombay Flared Gown",
+    "id": 501,
+    "design_no": "D.NO-131-PNK",
+    "name": "AT SELECTION Shimmer Net Flared Frock (Baby Pink)",
     "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 5 Pcs)",
+    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "colors": [
+      "Baby Pink"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_dno131_pink.jpg",
+    "description": "Full-flare pleated shimmer net festive Bombay frock in elegant baby pink with hand-embroidered bodice and 3D floral waist appliqué."
+  },
+  {
+    "id": 502,
+    "design_no": "D.NO-131-RED",
+    "name": "AT SELECTION Shimmer Net Flared Frock (Scarlet Red)",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 5 Pcs)",
+    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "colors": [
+      "Scarlet Red"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_dno131_red.jpg",
+    "description": "Designer scarlet red full-flare festive Bombay frock with intricate embroidered bodice and 3D floral waist appliqué."
+  },
+  {
+    "id": 503,
+    "design_no": "D.NO-131-BLU",
+    "name": "AT SELECTION Shimmer Net Flared Frock (Sky Blue)",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 5 Pcs)",
+    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "colors": [
+      "Sky Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_dno131_blue.jpg",
+    "description": "Vibrant sky blue festive Bombay frock with pleated shimmer net flare and sparkling zari embroidered bodice."
+  },
+  {
+    "id": 504,
+    "design_no": "D.NO-131-YEL",
+    "name": "AT SELECTION Shimmer Net Flared Frock (Bright Yellow)",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 5 Pcs)",
+    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "colors": [
+      "Bright Yellow"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_dno131_yellow.jpg",
+    "description": "Golden bright yellow festive Bombay frock with full pleated net flare, embroidered bodice, and floral waist accents."
+  },
+  {
+    "id": 505,
+    "design_no": "D.NO-131-ROS",
+    "name": "AT SELECTION Shimmer Net Flared Frock (Ruby Rose)",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 5 Pcs)",
+    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "colors": [
+      "Ruby Rose"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_dno131_rose.jpg",
+    "description": "Rich ruby rose pink festive Bombay frock featuring shimmer micro-glitter net flare and embroidered floral bodice."
+  },
+  {
+    "id": 401,
+    "design_no": "ATS-WW-101",
+    "name": "AT SELECTION White Puff Top & Black Flared Pants Set",
+    "category": "Western Wear",
     "size_ratio": "22 to 34 (Set of 4 Pcs)",
-    "fabric_type": "Soft Net with Ombre Floral Print & Metallic Belt",
-    "colors": ["Sky Blue Ombre", "Magenta Pink Ombre"],
-    "price_label": "Wholesale Quote Required",
-    "image": "images/frock_ombre_bombay.jpg",
-    "description": "Luxury party wear flared gown with puff sleeves and metallic waist trim, official AT SELECTION showroom design."
+    "fabric_type": "Soft Rayon Cotton & Twill Flared Pants",
+    "colors": [
+      "White & Black"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_ww101.jpg",
+    "description": "Western white top and black flared trousers co-ord set."
   },
   {
-    "id": 10,
-    "design_no": "D.NO - ATS-FRK-201",
-    "name": "AT SELECTION 4-Color Flower Corsage Festive Party Frock",
-    "category": "Frock & Dresses",
-    "size_ratio": "18 to 28 (Set of 4 Pcs)",
-    "fabric_type": "Satin Silk & Organza Layered Net with Shoulder Flowers",
-    "colors": ["Dark Pink", "Emerald Green", "Light Pink", "Lime Green"],
-    "price_label": "Wholesale Quote Required",
-    "image": "images/frock_4color_festive.jpg",
-    "description": "Bright festive party frock set with waist and shoulder flower corsages, popular Dewan Devdi showroom bulk seller."
-  },
-  {
-    "id": 11,
-    "design_no": "D.NO - ATS-FRK-202",
-    "name": "AT SELECTION Ruffle Sleeve Glitter Net Party Gown",
-    "category": "Frock & Dresses",
+    "id": 402,
+    "design_no": "ATS-WW-102",
+    "name": "AT SELECTION Denim Shirt & White Lace Pants Set",
+    "category": "Western Wear",
     "size_ratio": "22 to 34 (Set of 4 Pcs)",
-    "fabric_type": "Sparkling Glitter Net with Ruffle Flutter Sleeves & Silver Waist Belt",
-    "colors": ["Mauve Pink", "Royal Blue", "Mustard Gold"],
-    "price_label": "Wholesale Quote Required",
-    "image": "images/frock_glitter_ruffle.jpg",
-    "description": "Sparkling party net gown with full flare skirt, ruffle flutter sleeves, and metallic silver waist belt."
+    "fabric_type": "Washed Denim & Chikankari Lace Pants",
+    "colors": [
+      "Denim Blue & White"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_ww102.jpg",
+    "description": "Denim shirt top with white lace pants and backpack set."
   },
   {
-    "id": 12,
-    "design_no": "D.NO - ATS-FRK-203",
-    "name": "AT SELECTION Rose Flower Collar Satin Party Frock",
-    "category": "Frock & Dresses",
-    "size_ratio": "18 to 28 (Set of 4 Pcs)",
-    "fabric_type": "Rich Satin Silk with Rose Garland Neckline Collar",
-    "colors": ["Navy Blue", "Coral Pink", "Magenta"],
-    "price_label": "Wholesale Quote Required",
-    "image": "images/frock_rose_satin.jpg",
-    "description": "Elegant flared satin party frock with big rose flower garland collar neckline, direct from AT SELECTION showroom floor."
+    "id": 403,
+    "design_no": "ATS-WW-103",
+    "name": "AT SELECTION Embroidered Denim Shirt & Palazzo Set",
+    "category": "Western Wear",
+    "size_ratio": "22 to 34 (Set of 4 Pcs)",
+    "fabric_type": "Denim Cotton with Zig-Zag Lace Border",
+    "colors": [
+      "Indigo Denim Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_ww103.jpg",
+    "description": "Embroidered indigo denim shirt and flared palazzo set."
+  },
+  {
+    "id": 405,
+    "design_no": "11921",
+    "name": "AT SELECTION Embroidered Shirt & Flared Pant Top Set",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 4 Pcs)",
+    "fabric_type": "Cotton Rayon & Twill Flared Pants",
+    "colors": [
+      "Grey, Brown & Dark Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_11921.jpg",
+    "description": "Designer embroidered shirt top with drawstring waist and flared slit-hem trousers."
+  },
+  {
+    "id": 406,
+    "design_no": "11505",
+    "name": "AT SELECTION Mandarin Collar Tunic & Cargo Pant Set",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 4 Pcs)",
+    "fabric_type": "Printed Cotton & Ribbed Cargo Pants",
+    "colors": [
+      "Mustard Brown, Pink, Mint Green & Purple"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_11505.jpg",
+    "description": "Floral printed tunic top with side ties and ribbed cargo flared pants."
+  },
+  {
+    "id": 407,
+    "design_no": "12144",
+    "name": "AT SELECTION Sleeve Patch Sweatshirt & Cargo Pant Set",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 4 Pcs)",
+    "fabric_type": "Soft Fleece Cotton & Twill Cargo Pants",
+    "colors": [
+      "Black/Grey, Black/Pink, Black/Mustard & Black/Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_12144.jpg",
+    "description": "Color-block sleeve pocket sweatshirt with matching straight cargo pants."
+  },
+  {
+    "id": 408,
+    "design_no": "12078",
+    "name": "AT SELECTION Printed Flared Tunic & Buckle Cargo Pant Set",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 4 Pcs)",
+    "fabric_type": "Printed Silk Cotton & Heavy Twill Cargo Pants",
+    "colors": [
+      "Cream, Black & Grey"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_12078.jpg",
+    "description": "Printed flared tunic shirt with buckle-accented cargo pants set."
+  },
+  {
+    "id": 409,
+    "design_no": "35249",
+    "name": "AT SELECTION MCROWN Ruffle Top & Denim Pant Set",
+    "category": "Western Wear",
+    "size_ratio": "22 to 32 (Set of 6 Pcs)",
+    "fabric_type": "Printed Chiffon Tunic & Stretch Denim Jeans",
+    "colors": [
+      "Multicolor Floral & Black Denim"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_35249.jpg",
+    "description": "MCROWN flutter sleeve printed tunic top with black denim pants set."
   }
 ]
