@@ -107,39 +107,90 @@ function renderProducts(products) {
     return;
   }
 
-  gridContainer.innerHTML = products
-    .map(
-      (p) => `
+  // Group products by category
+  const categoryOrder = [
+    "Crop Top & Choli",
+    "Frock & Dresses",
+    "Plazo & Sharara",
+    "Western Wear",
+    "Independence Special"
+  ];
+
+  const grouped = {};
+  products.forEach((p) => {
+    if (!grouped[p.category]) grouped[p.category] = [];
+    grouped[p.category].push(p);
+  });
+
+  // Build HTML with section headers per category
+  let html = "";
+  const categories = categoryOrder.filter((c) => grouped[c]);
+  // Add any remaining categories not in the predefined order
+  Object.keys(grouped).forEach((c) => {
+    if (!categories.includes(c)) categories.push(c);
+  });
+
+  categories.forEach((cat) => {
+    const items = grouped[cat];
+    if (!items || items.length === 0) return;
+
+    // Category Section Header (full-width)
+    html += `
+    <div class="category-section-header" style="grid-column: 1 / -1; padding: 20px 0 12px 0; margin-top: 10px; border-bottom: 2px solid rgba(212,175,55,0.4);">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; color: #D4AF37; display: flex; align-items: center; gap: 10px; margin: 0;">
+        <i class="fa-solid fa-folder-open" style="font-size: 20px; opacity: 0.8;"></i>
+        ${cat}
+        <span style="font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.5); font-family: 'Inter', sans-serif;">(${items.length} Designs)</span>
+      </h3>
+    </div>`;
+
+    // Product cards for this category
+    items.forEach((p) => {
+      html += `
     <div class="product-card" data-category="${p.category}">
       <div class="product-img-wrapper" onclick="handleOpenLightbox(${p.id})">
         <span class="product-category-tag">${p.category}</span>
-        <img src="${p.image}" alt="${p.name}" class="product-img" loading="lazy" />
+        <span class="zoom-hint-badge"><i class="fa-solid fa-magnifying-glass-plus"></i> Hover to Zoom</span>
+        <img src="${p.image}?v=20260808" alt="${p.name}" class="product-img" loading="lazy" onerror="this.onerror=null; this.src='images/ats_logo.jpg';" />
       </div>
-      <div class="product-body">
-        <div>
-          <div class="product-header">
-            <span class="badge-dno">${p.design_no}</span>
-            <span class="text-gold font-bold text-SM">${p.price_label}</span>
-          </div>
-          <h3 class="product-title">${p.name}</h3>
-          <p class="product-spec"><i class="fa-solid fa-layer-group text-gold"></i> <strong>Set Ratio:</strong> ${p.size_ratio}</p>
-          <p class="product-spec"><i class="fa-solid fa-shirt text-gold"></i> <strong>Fabric:</strong> ${p.fabric_type}</p>
+      <div class="product-body" style="text-align: center; padding: 14px 12px;">
+        <div style="margin-bottom: 8px;">
+          <span class="badge-dno" style="font-size: 14px; padding: 4px 12px;">Code-${p.design_no}</span>
         </div>
-        <div class="product-footer">
-          <div class="qty-control">
+        <p class="text-muted text-SM" style="margin-bottom: 4px; font-weight: 500;">Category: ${p.category}</p>
+        <p class="text-gold font-bold text-SM" style="margin-bottom: 10px;">Size: ${p.size_ratio}</p>
+        <div class="product-footer" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
+          <div class="qty-control" style="justify-content: center; margin-bottom: 10px;">
             <label class="text-SM text-muted">Sets Req:</label>
             <input type="number" min="1" value="1" id="qty-${p.id}" class="qty-input" />
           </div>
           <button onclick="handleAddProductToCart(${p.id})" class="btn btn-gold btn-block text-SM">
-            <i class="fa-solid fa-cart-plus"></i> Add to Quote Cart
+            <i class="fa-solid fa-cart-plus"></i> + Add to Quote Cart
           </button>
         </div>
       </div>
-    </div>
-  `
-    )
-    .join("");
+    </div>`;
+    });
+  });
+
+  gridContainer.innerHTML = html;
 }
+
+/* --------------------------------------------------------------------------
+   INTERACTIVE HOVER MAGNIFIER ZOOM EVENT LISTENERS
+   -------------------------------------------------------------------------- */
+document.addEventListener("mousemove", (e) => {
+  const wrapper = e.target.closest(".product-img-wrapper");
+  if (!wrapper) return;
+  const img = wrapper.querySelector(".product-img");
+  if (!img) return;
+
+  const rect = wrapper.getBoundingClientRect();
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+  img.style.transformOrigin = `${x}% ${y}%`;
+});
 
 function setupFilterPills() {
   const filterBtns = document.querySelectorAll(".filter-btn");
@@ -228,8 +279,21 @@ window.handleOpenLightbox = function (productId) {
   const caption = document.getElementById("lightbox-caption");
 
   if (modal && modalImg && caption) {
-    modalImg.src = product.image;
-    caption.innerHTML = `<strong class="text-gold" style="font-size: 16px;">${product.design_no}</strong> — ${product.name} (${product.category})`;
+    modalImg.onerror = function() {
+      this.onerror = null;
+      this.src = 'images/ats_logo.jpg';
+    };
+    modalImg.src = product.image + '?v=20260808';
+    caption.innerHTML = `
+      <div style="text-align: center;">
+        <strong class="text-gold" style="font-size: 16px;">${product.design_no}</strong> — ${product.name} (${product.category})
+        <div style="margin-top: 10px;">
+          <a href="https://wa.me/918019924400?text=Hi%20Syed%20Ahmer,%20I%20want%20to%20see%20${encodeURIComponent(product.design_no)}%20(${encodeURIComponent(product.name)})%20on%20a%20Live%20WhatsApp%20Video%20Call." target="_blank" class="btn btn-whatsapp text-SM" style="display: inline-flex; padding: 6px 14px;">
+            <i class="fa-solid fa-video"></i> View ${product.design_no} on Live Video Call
+          </a>
+        </div>
+      </div>
+    `;
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
   }
@@ -242,3 +306,5 @@ function closeLightbox() {
     modal.setAttribute("aria-hidden", "true");
   }
 }
+
+
