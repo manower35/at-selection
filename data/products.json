@@ -1,5 +1,19 @@
 [
   {
+    "id": 506,
+    "design_no": "14060-C",
+    "name": "AT SELECTION Pleated Flared Gown with Floral Sequin Koti",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 4 Pcs)",
+    "fabric_type": "Pleated Silk Georgette & Embroidered Floral Jacket",
+    "colors": [
+      "Peach Coral with Floral Sequin Koti"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_14060c.jpg",
+    "description": "Full-flare pleated festive gown with floral sequin embroidered koti jacket and designer tassels."
+  },
+  {
     "id": 501,
     "design_no": "D.NO-131-PNK",
     "name": "AT SELECTION Shimmer Net Flared Frock (Baby Pink)",
@@ -11,7 +25,7 @@
     ],
     "price_label": "Wholesale Rate",
     "image": "images/frock_dno131_pink.jpg",
-    "description": "Full-flare pleated shimmer net festive Bombay frock in elegant baby pink with hand-embroidered bodice and 3D floral waist appliqué."
+    "description": "Full-flare pleated shimmer net festive Bombay frock in elegant baby pink with hand-embroidered bodice and 3D floral waist appliqu\u00e9."
   },
   {
     "id": 502,
@@ -25,7 +39,7 @@
     ],
     "price_label": "Wholesale Rate",
     "image": "images/frock_dno131_red.jpg",
-    "description": "Designer scarlet red full-flare festive Bombay frock with intricate embroidered bodice and 3D floral waist appliqué."
+    "description": "Designer scarlet red full-flare festive Bombay frock with intricate embroidered bodice and 3D floral waist appliqu\u00e9."
   },
   {
     "id": 503,
