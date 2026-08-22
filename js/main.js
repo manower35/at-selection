@@ -1,13 +1,77 @@
+
+/* --------------------------------------------------------------------------
+   0. VIP WHOLESALE B2B PASSCODE CONTROLLER (COMPETITOR SHIELD)
+   -------------------------------------------------------------------------- */
+const VALID_VIP_PASSCODES = ["ats2026", "2026", "7860", "ats99", "ahmer2026", "open", "owner", "wa", "direct", "1"];
+
+function initVipGate() {
+  const overlay = document.getElementById("vipGateOverlay");
+  const form = document.getElementById("vipPinForm");
+  const input = document.getElementById("vipPinInput");
+  const errorMsg = document.getElementById("vipErrorMsg");
+  if (!overlay) return;
+
+  // 1. Check URL parameters for Owner-shared link (?vip=ats2026, ?open=1, ?ref=owner, etc.)
+  const params = new URLSearchParams(window.location.search);
+  const urlKey = (params.get("vip") || params.get("pin") || params.get("access") || params.get("open") || params.get("ref") || params.get("link") || "").toLowerCase().trim();
+
+  if (urlKey && VALID_VIP_PASSCODES.includes(urlKey)) {
+    localStorage.setItem("ats_vip_auth", urlKey);
+    overlay.style.display = "none";
+    console.log("[VIP AUTH] Auto-unlocked via 1-tap WhatsApp VIP URL!");
+    return;
+  }
+
+  // 2. Check LocalStorage for existing verified session
+  const storedAuth = (localStorage.getItem("ats_vip_auth") || "").toLowerCase().trim();
+  if (storedAuth && VALID_VIP_PASSCODES.includes(storedAuth)) {
+    overlay.style.display = "none";
+    console.log("[VIP AUTH] Verified session loaded from storage.");
+    return;
+  }
+
+  // 3. Unauthorized: Show VIP Gate
+  overlay.style.display = "flex";
+
+  // Handle Form Submit / Unlock Button Click
+  if (form && input) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const entered = input.value.toLowerCase().trim();
+      if (VALID_VIP_PASSCODES.includes(entered)) {
+        localStorage.setItem("ats_vip_auth", entered);
+        if (errorMsg) errorMsg.style.display = "none";
+        
+        // Smooth unlock transition
+        overlay.style.transition = "opacity 0.3s ease";
+        overlay.style.opacity = "0";
+        setTimeout(() => {
+          overlay.style.display = "none";
+        }, 300);
+      } else {
+        if (errorMsg) {
+          errorMsg.style.display = "block";
+          input.classList.add("shake-anim");
+          setTimeout(() => input.classList.remove("shake-anim"), 500);
+        }
+      }
+    });
+  }
+}
+
 /* ==========================================================================
    AT SELECTION — Main Interactivity Script
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
+  initVipGate();
   initMobileMenu();
   initFaqAccordion();
   initLightbox();
   initHeroSlider();
   loadProductsCatalog();
+  initReviewsCarousel();
+  initFloatingSocialBar();
 });
 
 /* --------------------------------------------------------------------------
@@ -110,8 +174,10 @@ function renderProducts(products) {
 
   // Group products by category
   const categoryOrder = [
+    "2Pc Set",
     "Crop Top & Choli",
     "Frock & Dresses",
+    "Pattu & Ethnic",
     "Plazo & Sharara",
     "Western Wear",
     "Festive Special"
@@ -149,10 +215,9 @@ function renderProducts(products) {
     items.forEach((p) => {
       html += `
     <div class="product-card" data-category="${p.category}">
-      <div class="product-img-wrapper" onclick="handleOpenLightbox(${p.id})">
+      <div class="product-img-wrapper" onclick="handleOpenLightbox('${p.id}')">
         <span class="product-category-tag">${p.category}</span>
-        <span class="zoom-hint-badge"><i class="fa-solid fa-magnifying-glass-plus"></i> Hover to Zoom</span>
-        <img src="${p.image}?v=20260808" alt="${p.name}" class="product-img" loading="lazy" onerror="this.onerror=null; this.src='images/ats_logo.jpg';" />
+        <img src="${p.image}?v=20260818_clean" alt="${p.name}" class="product-img" loading="lazy" onerror="this.onerror=null; this.src='images/ats_logo.jpg';" />
       </div>
       <div class="product-body" style="text-align: center; padding: 14px 12px;">
         <div style="margin-bottom: 8px;">
@@ -165,9 +230,14 @@ function renderProducts(products) {
             <label class="text-SM text-muted">Sets Req:</label>
             <input type="number" min="1" value="1" id="qty-${p.id}" class="qty-input" />
           </div>
-          <button onclick="handleAddProductToCart(${p.id})" class="btn btn-gold btn-block text-SM">
-            <i class="fa-solid fa-cart-plus"></i> + Add to Quote Cart
-          </button>
+          <div style="margin-top: 6px; display: flex; gap: 6px;">
+            <button onclick="handleAddProductToCart('${p.id}')" class="btn btn-gold text-SM" style="flex: 1; padding: 9px 8px; font-weight: 700;">
+              <i class="fa-solid fa-cart-plus"></i> + Quote
+            </button>
+            <button onclick="handleDownloadImage('${p.image}', 'AT_SELECTION_Code_${p.design_no}.jpg')" class="btn text-SM" style="background: rgba(212,175,55,0.15); border: 1px solid rgba(212,175,55,0.4); color: #D4AF37; padding: 9px 10px; font-weight: 600;" title="Download HD Photo">
+              <i class="fa-solid fa-download"></i> HD
+            </button>
+          </div>
         </div>
       </div>
     </div>`;
@@ -176,22 +246,6 @@ function renderProducts(products) {
 
   gridContainer.innerHTML = html;
 }
-
-/* --------------------------------------------------------------------------
-   INTERACTIVE HOVER MAGNIFIER ZOOM EVENT LISTENERS
-   -------------------------------------------------------------------------- */
-document.addEventListener("mousemove", (e) => {
-  const wrapper = e.target.closest(".product-img-wrapper");
-  if (!wrapper) return;
-  const img = wrapper.querySelector(".product-img");
-  if (!img) return;
-
-  const rect = wrapper.getBoundingClientRect();
-  const x = ((e.clientX - rect.left) / rect.width) * 100;
-  const y = ((e.clientY - rect.top) / rect.height) * 100;
-
-  img.style.transformOrigin = `${x}% ${y}%`;
-});
 
 function setupFilterPills() {
   const filterBtns = document.querySelectorAll(".filter-btn");
@@ -203,6 +257,15 @@ function setupFilterPills() {
       const selectedCategory = btn.getAttribute("data-filter");
       if (selectedCategory === "all") {
         renderProducts(allProducts);
+      } else if (selectedCategory === "Festive Special") {
+        const filtered = allProducts.filter(
+          (p) =>
+            p.category === "Festive Special" ||
+            (p.name && p.name.toLowerCase().includes("festive")) ||
+            (p.description && p.description.toLowerCase().includes("festive")) ||
+            (p.fabric_type && p.fabric_type.toLowerCase().includes("zari"))
+        );
+        renderProducts(filtered);
       } else {
         const filtered = allProducts.filter((p) => p.category === selectedCategory);
         renderProducts(filtered);
@@ -212,25 +275,92 @@ function setupFilterPills() {
 }
 
 function setupSearchInput() {
-  const searchInput = document.getElementById("search-input");
-  if (!searchInput) return;
+  const searchInputs = document.querySelectorAll(".search-sync-input, #search-input");
+  const clearButtons = document.querySelectorAll(".nav-search-clear-btn, .mobile-search-clear-btn, #catalog-search-clear-btn");
 
-  searchInput.addEventListener("input", (e) => {
-    const query = e.target.value.toLowerCase().trim();
-    const filtered = allProducts.filter(
-      (p) =>
-        p.design_no.toLowerCase().includes(query) ||
-        p.name.toLowerCase().includes(query) ||
-        p.category.toLowerCase().includes(query) ||
-        p.fabric_type.toLowerCase().includes(query)
-    );
+  if (!searchInputs.length) return;
+
+  function performFilter(rawQuery, sourceElement) {
+    const query = rawQuery.toLowerCase().trim();
+
+    // Sync query across all search inputs
+    searchInputs.forEach((input) => {
+      if (input !== sourceElement) {
+        input.value = rawQuery;
+      }
+    });
+
+    // Toggle clear buttons
+    clearButtons.forEach((btn) => {
+      btn.style.display = query.length > 0 ? "flex" : "none";
+    });
+
+    // Filter products
+    const filtered = allProducts.filter((p) => {
+      const dno = (p.design_no || "").toLowerCase();
+      const name = (p.name || "").toLowerCase();
+      const cat = (p.category || "").toLowerCase();
+      const fabric = (p.fabric_type || "").toLowerCase();
+      const size = (p.size_ratio || "").toLowerCase();
+      const colors = (Array.isArray(p.colors) ? p.colors.join(" ") : "").toLowerCase();
+      const desc = (p.description || "").toLowerCase();
+
+      return (
+        dno.includes(query) ||
+        name.includes(query) ||
+        cat.includes(query) ||
+        fabric.includes(query) ||
+        size.includes(query) ||
+        colors.includes(query) ||
+        desc.includes(query)
+      );
+    });
+
     renderProducts(filtered);
+
+    // If typing from top or mobile navbar, smooth scroll down to catalog lookbook
+    if (query.length >= 2 && sourceElement && (sourceElement.classList.contains("nav-search-input") || sourceElement.classList.contains("mobile-search-input"))) {
+      const catalogSec = document.getElementById("catalog");
+      if (catalogSec) {
+        const rect = catalogSec.getBoundingClientRect();
+        if (rect.top > 300 || rect.top < -300) {
+          catalogSec.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    }
+  }
+
+  // Attach input event listeners
+  searchInputs.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      performFilter(e.target.value, e.target);
+    });
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        const catalogSec = document.getElementById("catalog");
+        if (catalogSec) {
+          catalogSec.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    });
+  });
+
+  // Attach clear button event listeners
+  clearButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      searchInputs.forEach((input) => {
+        input.value = "";
+      });
+      clearButtons.forEach((b) => (b.style.display = "none"));
+      renderProducts(allProducts);
+    });
   });
 }
 
 // Global handler so inline onclick calls work cleanly
 window.handleAddProductToCart = function (productId) {
-  const product = allProducts.find((p) => p.id === productId);
+  const product = allProducts.find((p) => String(p.id) === String(productId));
   const qtyInput = document.getElementById(`qty-${productId}`);
   const setsCount = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
 
@@ -244,6 +374,44 @@ window.handleAddProductToCart = function (productId) {
       image: product.image,
       sets_count: setsCount,
     });
+  }
+};
+
+window.handleDirectWhatsAppInquiry = function (productId) {
+  const product = allProducts.find((p) => String(p.id) === String(productId));
+  if (!product) return;
+
+  const qtyInput = document.getElementById(`qty-${productId}`);
+  const setsCount = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
+  const origin = (window.location.origin && !window.location.origin.startsWith("file")) 
+    ? window.location.origin 
+    : "https://at-selection.vercel.app";
+  const fullImgUrl = product.image.startsWith("http") ? product.image : `${origin}/${product.image}`;
+
+  let msg = `*NEW B2B WHOLESALE INQUIRY - AT SELECTION*\n`;
+  msg += `------------------------------------\n`;
+  msg += `*Design Code:* Code-${product.design_no}\n`;
+  msg += `*Item:* ${product.name}\n`;
+  msg += `*Category:* ${product.category}\n`;
+  msg += `*Size Ratio:* ${product.size_ratio}\n`;
+  msg += `*Quantity Required:* *${setsCount} Set(s)*\n`;
+  msg += `*Photo Preview:* ${fullImgUrl}\n\n`;
+  msg += `Please confirm stock availability, available color sets, and wholesale price.`;
+
+  const primaryLine = "919701515477"; // Syed Ahmer
+  const encoded = encodeURIComponent(msg);
+  const apiWaUrl = `https://api.whatsapp.com/send?phone=${primaryLine}&text=${encoded}`;
+  const directWaUrl = `https://wa.me/${primaryLine}?text=${encoded}`;
+
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    window.location.href = apiWaUrl;
+  } else {
+    const newWin = window.open(directWaUrl, "_blank", "noopener,noreferrer");
+    if (!newWin || newWin.closed || typeof newWin.closed === "undefined") {
+      window.location.href = directWaUrl;
+    }
   }
 };
 
@@ -272,7 +440,7 @@ function initLightbox() {
 }
 
 window.handleOpenLightbox = function (productId) {
-  const product = allProducts.find((p) => p.id === productId);
+  const product = allProducts.find((p) => String(p.id) === String(productId));
   if (!product) return;
 
   const modal = document.getElementById("lightbox-modal");
@@ -284,20 +452,33 @@ window.handleOpenLightbox = function (productId) {
       this.onerror = null;
       this.src = 'images/ats_logo.jpg';
     };
-    modalImg.src = product.image + '?v=20260808';
+    modalImg.src = product.image + '?v=20260818_clean';
     caption.innerHTML = `
       <div style="text-align: center;">
-        <strong class="text-gold" style="font-size: 16px;">${product.design_no}</strong> — ${product.name} (${product.category})
-        <div style="margin-top: 10px;">
-          <a href="https://wa.me/919701515477?text=Hi%20Syed%20Ahmer,%20I%20want%20to%20see%20${encodeURIComponent(product.design_no)}%20(${encodeURIComponent(product.name)})%20on%20a%20Live%20WhatsApp%20Video%20Call." target="_blank" class="btn btn-whatsapp text-SM" style="display: inline-flex; padding: 6px 14px;">
-            <i class="fa-solid fa-video"></i> View ${product.design_no} on Live Video Call
+        <strong class="text-gold" style="font-size: 16px;">Code-${product.design_no}</strong> — ${product.name} (${product.category})
+        <div style="margin-top: 10px; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+          <a href="https://wa.me/919701515477?text=Hi%20Syed%20Ahmer,%20I%20want%20to%20see%20${encodeURIComponent(product.design_no)}%20(${encodeURIComponent(product.name)})%20on%20a%20Live%20WhatsApp%20Video%20Call." target="_blank" class="btn btn-whatsapp text-SM" style="display: inline-flex; padding: 7px 14px;">
+            <i class="fa-solid fa-video"></i> Live Video Call
           </a>
+          <button onclick="handleDownloadImage('${product.image}', 'AT_SELECTION_Code_${product.design_no}.jpg')" class="btn text-SM" style="background: #D4AF37; color: #000; font-weight: 700; padding: 7px 14px; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-download"></i> Download HD Photo
+          </button>
         </div>
       </div>
     `;
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
   }
+};
+
+window.handleDownloadImage = function (imagePath, filename) {
+  if (!imagePath) return;
+  const link = document.createElement("a");
+  link.href = imagePath;
+  link.download = filename || "AT_SELECTION_Product_Photo.jpg";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 };
 
 function closeLightbox() {
@@ -325,7 +506,14 @@ function initHeroSlider() {
 
   let currentSlide = 0;
   const totalSlides = slides.length;
-  const INTERVAL_MS = 5000; // Exact 5-second interval
+
+  if (totalSlides <= 1) {
+    if (prevBtn) prevBtn.style.display = "none";
+    if (nextBtn) nextBtn.style.display = "none";
+    if (progressFill && progressFill.parentElement) progressFill.parentElement.style.display = "none";
+    return;
+  }
+  const INTERVAL_MS = 3000; // Fast 3-second auto-rolling interval
   let slideTimer = null;
   let progressAnimation = null;
   let progressStart = 0;
@@ -449,5 +637,30 @@ function initHeroSlider() {
   startAutoPlay();
 }
 
+/* --------------------------------------------------------------------------
+   7. REVIEWS CAROUSEL INFINITE SCROLL
+   -------------------------------------------------------------------------- */
+function initReviewsCarousel() {
+  const track = document.getElementById("reviews-track");
+  if (!track) return;
+  
+  // Clone children for infinite scroll
+  const children = Array.from(track.children);
+  children.forEach(child => {
+    const clone = child.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    track.appendChild(clone);
+  });
+}
 
-
+/* --------------------------------------------------------------------------
+   8. FLOATING SOCIAL BAR ANIMATION
+   -------------------------------------------------------------------------- */
+function initFloatingSocialBar() {
+  const socialBar = document.getElementById("floating-social-bar");
+  if (!socialBar) return;
+  
+  setTimeout(() => {
+    socialBar.classList.add("show");
+  }, 2000);
+}
