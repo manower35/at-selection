@@ -1,86 +1,1726 @@
 [
   {
-    "id": 506,
-    "design_no": "14060-C",
-    "name": "AT SELECTION Pleated Flared Gown with Floral Sequin Koti",
+    "id": "mk31017780",
+    "design_no": "MK31017780",
+    "name": "AT SELECTION Frock & Dresses D.No MK31017780",
     "category": "Frock & Dresses",
-    "size_ratio": "24x34 (Set of 4 Pcs)",
-    "fabric_type": "Pleated Silk Georgette & Embroidered Floral Jacket",
+    "size_ratio": "36x40",
+    "fabric_type": "Premium Soft Fabric with Full Cotton Lining",
     "colors": [
-      "Peach Coral with Floral Sequin Koti"
+      "Assorted 4-Color B2B Set"
     ],
-    "price_label": "Wholesale Rate",
-    "image": "images/frock_14060c.jpg",
-    "description": "Full-flare pleated festive gown with floral sequin embroidered koti jacket and designer tassels."
+    "image": "images/frock_mk31017780_1.jpg",
+    "description": "Ready-stock wholesale Frock & Dresses designer bundle with full cotton lining."
   },
   {
-    "id": 501,
-    "design_no": "D.NO-131-PNK",
-    "name": "AT SELECTION Shimmer Net Flared Frock (Baby Pink)",
+    "id": "mk13089598",
+    "design_no": "MK13089598",
+    "name": "AT SELECTION Frock & Dresses D.No MK13089598",
     "category": "Frock & Dresses",
-    "size_ratio": "22x32 (Set of 5 Pcs)",
-    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "size_ratio": "24x32",
+    "fabric_type": "Premium Soft Fabric with Full Cotton Lining",
     "colors": [
-      "Baby Pink"
+      "Assorted 4-Color B2B Set"
     ],
-    "price_label": "Wholesale Rate",
-    "image": "images/frock_dno131_pink.jpg",
-    "description": "Full-flare pleated shimmer net festive Bombay frock in elegant baby pink with hand-embroidered bodice and 3D floral waist appliqu\u00e9."
+    "image": "images/frock_mk13089598_1.jpg",
+    "description": "Ready-stock wholesale Frock & Dresses designer bundle with full cotton lining."
   },
   {
-    "id": 502,
-    "design_no": "D.NO-131-RED",
-    "name": "AT SELECTION Shimmer Net Flared Frock (Scarlet Red)",
+    "id": "mk30020470",
+    "design_no": "MK30020470",
+    "name": "AT SELECTION Frock & Dresses D.No MK30020470",
     "category": "Frock & Dresses",
-    "size_ratio": "22x32 (Set of 5 Pcs)",
-    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "size_ratio": "24x34",
+    "fabric_type": "Premium Soft Fabric with Full Cotton Lining",
     "colors": [
-      "Scarlet Red"
+      "Assorted 4-Color B2B Set"
     ],
-    "price_label": "Wholesale Rate",
-    "image": "images/frock_dno131_red.jpg",
-    "description": "Designer scarlet red full-flare festive Bombay frock with intricate embroidered bodice and 3D floral waist appliqu\u00e9."
+    "image": "images/frock_mk30020470_1.jpg",
+    "description": "Ready-stock wholesale Frock & Dresses designer bundle with full cotton lining."
   },
   {
-    "id": 503,
-    "design_no": "D.NO-131-BLU",
-    "name": "AT SELECTION Shimmer Net Flared Frock (Sky Blue)",
+    "id": 1,
+    "design_no": "BG516F6525",
+    "name": "AT SELECTION Luxury Princess Gown D.No BG516F6525",
     "category": "Frock & Dresses",
-    "size_ratio": "22x32 (Set of 5 Pcs)",
-    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Premium Organza & Shimmer Net with Cotton Lycra Lining",
     "colors": [
+      "Powder Pink",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_1.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 3,
+    "design_no": "MK1029546",
+    "name": "AT SELECTION Designer Floral Embroidery Gown D.No MK1029546",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Chinon Silk & Micro Tulle with Handcrafted Zari Bodice",
+    "colors": [
+      "Peach Coral",
+      "Lavender",
+      "Pistachio"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_3.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 4,
+    "design_no": "MK11072698",
+    "name": "AT SELECTION Shimmer Net Festive Frock D.No MK11072698",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Metallic Shimmer Mesh with Heavy Flared Skirt",
+    "colors": [
+      "Golden Yellow",
+      "Wine Burgundy",
+      "Teal Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_4.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 5,
+    "design_no": "SH00475496",
+    "name": "AT SELECTION Pastel Tiered Ruffle Frock D.No SH00475496",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Soft Net & Jacquard Silk Yoke with Satin Bow Accent",
+    "colors": [
+      "Blush Pink",
+      "Cloud White",
+      "Aqua Marine"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_5.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 6,
+    "design_no": "AD1475579",
+    "name": "AT SELECTION Royal Velvet Touch Gown D.No AD1475579",
+    "category": "Frock & Dresses",
+    "size_ratio": "26x36 (Set of 6 Pcs)",
+    "fabric_type": "Micro Velvet & Multi-Layer Net Flare with Cancan",
+    "colors": [
+      "Deep Maroon",
+      "Emerald Green",
+      "Midnight Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_6.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 7,
+    "design_no": "JD1472437",
+    "name": "AT SELECTION Metallic Starlet Party Gown D.No JD1472437",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Glitter Organza & Tiered Soft Net Ruffles",
+    "colors": [
+      "Rose Gold",
+      "Silver Mist",
+      "Champagne"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_7.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 8,
+    "design_no": "YD757530",
+    "name": "AT SELECTION Sequins Bodice Princess Dress D.No YD757530",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "All-Over Sequins & Tulle Flare with Soft Inner",
+    "colors": [
+      "Crimson Red",
+      "Royal Purple",
+      "Canary Yellow"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_8.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 9,
+    "design_no": "509",
+    "name": "AT SELECTION Grand Festive Bombay Frock Gown D.No 509",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Jacquard Silk & Georgette Flared Gown",
+    "colors": [
+      "Multi-Color Festive Assortment"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_9.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 10,
+    "design_no": "MK8058366",
+    "name": "AT SELECTION Classic Velvet Yoke Party Frock D.No MK8058366",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Velvet & Net Fusion with Intricate Zari Work",
+    "colors": [
+      "Wine Burgundy",
+      "Navy Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_10.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 11,
+    "design_no": "MK8068366",
+    "name": "AT SELECTION Embroidered Bodice Ball Gown D.No MK8068366",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Silk Georgette & Multi-Layer Cancan Net",
+    "colors": [
+      "Rani Pink",
+      "Teal Turquoise",
+      "Mustard Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_11.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 12,
+    "design_no": "YD02394",
+    "name": "AT SELECTION Multilayer Tulle Party Frock D.No YD02394",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Net & Soft Satin with Cascading Hemline",
+    "colors": [
+      "Pastel Peach",
+      "Sky Blue",
+      "Lavender"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_12.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 13,
+    "design_no": "JD1471500",
+    "name": "AT SELECTION Glitter Organza Festive Dress D.No JD1471500",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Organza Shimmer with Threadwork Accents",
+    "colors": [
+      "Rose Coral",
+      "Aqua Green",
+      "Golden Ivory"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_13.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 14,
+    "design_no": "BG3017675",
+    "name": "AT SELECTION Premium Satin Flared Gown D.No BG3017675",
+    "category": "Frock & Dresses",
+    "size_ratio": "26x36 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Bridal Satin with Cancan Flare",
+    "colors": [
+      "Ruby Crimson",
+      "Peacock Blue",
+      "Emerald"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_14.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 15,
+    "design_no": "515",
+    "name": "AT SELECTION Grand Festive Bombay Frock Gown D.No 515",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Soft Art Silk & Net Flare",
+    "colors": [
+      "Assorted B2B Color Bundle"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_15.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 16,
+    "design_no": "516",
+    "name": "AT SELECTION Grand Festive Bombay Frock Gown D.No 516",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Embroidered Tulle & Satin",
+    "colors": [
+      "Assorted B2B Color Bundle"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_16.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 17,
+    "design_no": "BG00050590",
+    "name": "AT SELECTION Bombay Special Party Frock D.No BG00050590",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Georgette with Heavy Zari Border",
+    "colors": [
+      "Maroon Wine",
+      "Navy Blue",
+      "Mustard"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_17.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 18,
+    "design_no": "HL47957452",
+    "name": "AT SELECTION Heavy Handwork Yoke Gown D.No HL47957452",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Hand Embroidered Yoke & Shimmer Flare",
+    "colors": [
+      "Pastel Pink",
+      "Mint Green",
       "Sky Blue"
     ],
     "price_label": "Wholesale Rate",
-    "image": "images/frock_dno131_blue.jpg",
-    "description": "Vibrant sky blue festive Bombay frock with pleated shimmer net flare and sparkling zari embroidered bodice."
+    "image": "images/frock_full_18.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
   },
   {
-    "id": 504,
-    "design_no": "D.NO-131-YEL",
-    "name": "AT SELECTION Shimmer Net Flared Frock (Bright Yellow)",
+    "id": 19,
+    "design_no": "BG1594540",
+    "name": "AT SELECTION Cascading Ruffle Designer Frock D.No BG1594540",
     "category": "Frock & Dresses",
-    "size_ratio": "22x32 (Set of 5 Pcs)",
-    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Glitter Net & Satin Ribbon Accents",
     "colors": [
-      "Bright Yellow"
+      "Rose Gold",
+      "Lavender",
+      "Peach"
     ],
     "price_label": "Wholesale Rate",
-    "image": "images/frock_dno131_yellow.jpg",
-    "description": "Golden bright yellow festive Bombay frock with full pleated net flare, embroidered bodice, and floral waist accents."
+    "image": "images/frock_full_19.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
   },
   {
-    "id": 505,
-    "design_no": "D.NO-131-ROS",
-    "name": "AT SELECTION Shimmer Net Flared Frock (Ruby Rose)",
+    "id": 20,
+    "design_no": "MK9056630",
+    "name": "AT SELECTION Dual-Tone Shimmer Ball Gown D.No MK9056630",
     "category": "Frock & Dresses",
-    "size_ratio": "22x32 (Set of 5 Pcs)",
-    "fabric_type": "Shimmer Net Pleated Flare & Embroidered Bodice",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Dual-Tone Metallic Shimmer Silk",
     "colors": [
-      "Ruby Rose"
+      "Wine Burgundy",
+      "Midnight Blue",
+      "Bottle Green"
     ],
     "price_label": "Wholesale Rate",
-    "image": "images/frock_dno131_rose.jpg",
-    "description": "Rich ruby rose pink festive Bombay frock featuring shimmer micro-glitter net flare and embroidered floral bodice."
+    "image": "images/frock_full_20.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 21,
+    "design_no": "SH00471545",
+    "name": "AT SELECTION Traditional Motif Party Frock D.No SH00471545",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Art Silk & Cancan Flared Net",
+    "colors": [
+      "Rani Pink",
+      "Teal Blue",
+      "Golden Mustard"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_21.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 22,
+    "design_no": "MK27047338",
+    "name": "AT SELECTION Luxury Peplum Waist Gown D.No MK27047338",
+    "category": "Frock & Dresses",
+    "size_ratio": "26x36 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Peplum Bodice with Multi-Layer Net",
+    "colors": [
+      "Ruby Crimson",
+      "Emerald Green",
+      "Royal Purple"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_22.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 23,
+    "design_no": "MK9057880",
+    "name": "AT SELECTION Royal Gold Zari Embroidered Dress D.No MK9057880",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Gold Zari Needlework & Net Flare",
+    "colors": [
+      "Golden Yellow",
+      "Deep Maroon",
+      "Navy Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_23.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 24,
+    "design_no": "MC28151574",
+    "name": "AT SELECTION Floral Brocade Festive Gown D.No MC28151574",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Brocade Silk Bodice with Flared Skirt",
+    "colors": [
+      "Peach Gold",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_24.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 25,
+    "design_no": "091960",
+    "name": "AT SELECTION Micro-Pleat Cancan Party Frock D.No 091960",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Micro-Pleated Tulle with Satin Inner",
+    "colors": [
+      "Rose Coral",
+      "Lavender",
+      "Aqua Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_25.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 26,
+    "design_no": "MC23386490",
+    "name": "AT SELECTION Velvet Embroidery Ball Gown D.No MC23386490",
+    "category": "Frock & Dresses",
+    "size_ratio": "26x36 (Set of 6 Pcs)",
+    "fabric_type": "Velvet Yoke & Multi-Tier Net Skirt",
+    "colors": [
+      "Maroon Wine",
+      "Navy Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_26.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 27,
+    "design_no": "527",
+    "name": "AT SELECTION Grand Festive Bombay Frock Gown D.No 527",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Organza & Art Silk Blend",
+    "colors": [
+      "Assorted B2B Color Bundle"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_27.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 28,
+    "design_no": "MK7003784",
+    "name": "AT SELECTION Grand Bombay Flared Frock D.No MK7003784",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Net with Broad Circumference Cancan",
+    "colors": [
+      "Rani Pink",
+      "Teal Blue",
+      "Mustard Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_28.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 29,
+    "design_no": "MK12117720",
+    "name": "AT SELECTION Tiered Net Gown D.No MK12117720",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Multi-Layer Tiered Net with Sequins Work",
+    "colors": [
+      "Pastel Peach",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_29.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 30,
+    "design_no": "12860796",
+    "name": "AT SELECTION Festive Party Dress D.No 12860796",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Silk Blend & Shimmer Net",
+    "colors": [
+      "Ruby Crimson",
+      "Emerald Green",
+      "Royal Purple"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_30.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 31,
+    "design_no": "MK8018864",
+    "name": "AT SELECTION Royal Embroidered Gown D.No MK8018864",
+    "category": "Frock & Dresses",
+    "size_ratio": "26x36 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Zari Needlework on Tulle",
+    "colors": [
+      "Golden Yellow",
+      "Deep Maroon",
+      "Navy Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_31.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 32,
+    "design_no": "532",
+    "name": "AT SELECTION Grand Festive Bombay Frock Gown D.No 532",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Soft Art Silk & Net Flare",
+    "colors": [
+      "Assorted B2B Color Bundle"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_32.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 33,
+    "design_no": "MK1049856",
+    "name": "AT SELECTION Designer Velvet Gown D.No MK1049856",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Micro Velvet & Multi-Layer Net",
+    "colors": [
+      "Wine Burgundy",
+      "Midnight Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_33.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 34,
+    "design_no": "MK12147610",
+    "name": "AT SELECTION Grand Bombay Frock D.No MK12147610",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Georgette with Heavy Zari Motifs",
+    "colors": [
+      "Crimson Red",
+      "Royal Navy",
+      "Golden Mustard"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_34.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 35,
+    "design_no": "MK12147610-B",
+    "name": "AT SELECTION Grand Bombay Frock D.No MK12147610 (Variant B)",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Shimmer Net & Satin Inner",
+    "colors": [
+      "Pastel Peach",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_35.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 36,
+    "design_no": "MK12147610-C",
+    "name": "AT SELECTION Grand Bombay Frock D.No MK12147610 (Variant C)",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Embroidered Silk & Cancan Skirt",
+    "colors": [
+      "Rose Gold",
+      "Lavender",
+      "Aqua"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_36.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 37,
+    "design_no": "MK12147610-D",
+    "name": "AT SELECTION Grand Bombay Frock D.No MK12147610 (Variant D)",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Soft Net & Brocade Jacquard Yoke",
+    "colors": [
+      "Rani Pink",
+      "Teal Turquoise",
+      "Mustard Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_37.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 38,
+    "design_no": "MK12147610-E",
+    "name": "AT SELECTION Grand Bombay Frock D.No MK12147610 (Variant E)",
+    "category": "Frock & Dresses",
+    "size_ratio": "26x36 (Set of 6 Pcs)",
+    "fabric_type": "Glitter Net with Tiered Flare",
+    "colors": [
+      "Deep Maroon",
+      "Navy Blue",
+      "Emerald"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_38.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 39,
+    "design_no": "MK12147610-F",
+    "name": "AT SELECTION Grand Bombay Frock D.No MK12147610 (Variant F)",
+    "category": "Frock & Dresses",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Satin Silk & Tulle Flare",
+    "colors": [
+      "Golden Yellow",
+      "Wine Burgundy",
+      "Teal Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_39.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 40,
+    "design_no": "MK10074690",
+    "name": "AT SELECTION Luxury Party Gown D.No MK10074690",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Micro Velvet & Multi-Layer Net",
+    "colors": [
+      "Ruby Crimson",
+      "Emerald Green",
+      "Royal Purple"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_40.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 41,
+    "design_no": "MC2270686",
+    "name": "AT SELECTION Festive Embroidered Frock D.No MC2270686",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Silk Blend & Heavy Zari Border",
+    "colors": [
+      "Peach Gold",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_41.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 42,
+    "design_no": "MS00421557",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MS00421557",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Wine Burgundy",
+      "Midnight Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_42.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 43,
+    "design_no": "MK100756",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MK100756",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Maroon Wine",
+      "Navy Blue",
+      "Mustard"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_43.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 44,
+    "design_no": "MC1040566",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MC1040566",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Pastel Pink",
+      "Mint Green",
+      "Sky Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_44.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 45,
+    "design_no": "MC0001750",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MC0001750",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Rose Gold",
+      "Lavender",
+      "Peach"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_45.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 46,
+    "design_no": "MC1025622",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MC1025622",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Rani Pink",
+      "Teal Turquoise",
+      "Mustard Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_46.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 47,
+    "design_no": "MC1047750",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MC1047750",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Ruby Crimson",
+      "Emerald Green",
+      "Royal Purple"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_47.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 48,
+    "design_no": "MC2261602",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MC2261602",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Golden Yellow",
+      "Deep Maroon",
+      "Navy Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_48.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 49,
+    "design_no": "MK10067398",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MK10067398",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x28 (Set of 3 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Peach Gold",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_49.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 50,
+    "design_no": "MK14067698",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MK14067698",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x32 (Set of 5 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Rose Coral",
+      "Lavender",
+      "Aqua Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_50.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 51,
+    "design_no": "MK13088640",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MK13088640",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Wine Burgundy",
+      "Midnight Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_51.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 52,
+    "design_no": "MK10083598",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MK10083598",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Rani Pink",
+      "Teal Blue",
+      "Mustard Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_52.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 53,
+    "design_no": "K707954",
+    "name": "AT SELECTION Grand Festive Party Gown D.No K707954",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Pastel Peach",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_53.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 54,
+    "design_no": "Frock-54",
+    "name": "AT SELECTION Premium Classic Ball Gown Frock",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x28 (Set of 3 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Ruby Crimson",
+      "Emerald Green",
+      "Royal Purple"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_54.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 55,
+    "design_no": "MK12151396",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MK12151396",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Golden Yellow",
+      "Deep Maroon",
+      "Navy Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_55.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 56,
+    "design_no": "MK31017630",
+    "name": "AT SELECTION Grand Festive Party Gown D.No MK31017630",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Peach Gold",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_56.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 57,
+    "design_no": "MK31022540",
+    "name": "AT SELECTION Grand Festive Bombay Frock Gown D.No MK31022540",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Wine Burgundy",
+      "Midnight Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_57.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 58,
+    "design_no": "DMS004212520",
+    "name": "AT SELECTION Grand Festive Bombay Frock Gown D.No DMS004212520",
+    "category": "Frock & Dresses",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Silk Blend & Multilayer Net",
+    "colors": [
+      "Deep Maroon",
+      "Navy Blue",
+      "Emerald"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/frock_full_58.jpg",
+    "description": "Bestseller Bombay festive party wear frock with rich flare and cotton lining."
+  },
+  {
+    "id": 59,
+    "design_no": "MC30362402",
+    "name": "AT SELECTION 3-Piece Designer Blazer & Trousers Set D.No MC30362402",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Premium Cotton Lycra & Stretch Twill",
+    "colors": [
+      "Olive Beige",
+      "Navy Blue",
+      "Dusty Pink"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_1.jpg",
+    "description": "Smart casual western 3-piece formal pant and coat ensemble with comfortable stretch inner."
+  },
+  {
+    "id": 60,
+    "design_no": "MC30362402-B",
+    "name": "AT SELECTION 3-Piece Western Suit Set D.No MC30362402",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Premium Cotton Lycra & Stretch Twill",
+    "colors": [
+      "Rose Dust",
+      "Teal Blue",
+      "Charcoal"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_2.jpg",
+    "description": "Trending Korean-style western wear suit set with high-density fabric touch."
+  },
+  {
+    "id": 61,
+    "design_no": "MC34164414",
+    "name": "AT SELECTION Casual Denim Co-Ord Set D.No MC34164414",
+    "category": "Western Wear",
+    "size_ratio": "22x30 (Set of 5 Pcs)",
+    "fabric_type": "Soft Washed Denim & Cotton Rib Inner",
+    "colors": [
+      "Classic Blue Denim",
+      "Ice Washed Blue",
+      "Midnight Black"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_3.jpg",
+    "description": "High-street casual jacket and trouser set with elasticated waistband."
+  },
+  {
+    "id": 62,
+    "design_no": "MC44003388",
+    "name": "AT SELECTION Chic Jumpsuit with Belt D.No MC44003388",
+    "category": "Western Wear",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Crepe Lycra Blend with Golden Buckle Sash",
+    "colors": [
+      "Maroon Wine",
+      "Navy Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_4.jpg",
+    "description": "Modern western styling jumpsuit with breathable fabric and tailored fit."
+  },
+  {
+    "id": 63,
+    "design_no": "44006",
+    "name": "AT SELECTION High-Street Cargo & Top Ensemble D.No 44006",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Cotton Twill Cargo & Ribbed Crop Top",
+    "colors": [
+      "Khaki Beige",
+      "Military Olive",
+      "Slate Grey"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_5.jpg",
+    "description": "Top-selling multi-pocket streetwear cargo set with adjustable drawstrings."
+  },
+  {
+    "id": 64,
+    "design_no": "JD1432140",
+    "name": "AT SELECTION Designer Western Tunic & Pants D.No JD1432140",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Soft Cotton Lycra & Crepe Blend",
+    "colors": [
+      "Pastel Peach",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_6.jpg",
+    "description": "High-street western wear set with comfortable stretch inner and premium finish."
+  },
+  {
+    "id": 65,
+    "design_no": "MC44003388-B",
+    "name": "AT SELECTION 3-Piece Western Suit Set D.No MC44003388",
+    "category": "Western Wear",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Crepe Lycra Blend",
+    "colors": [
+      "Ruby Crimson",
+      "Emerald Green",
+      "Royal Purple"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_7.jpg",
+    "description": "Bestseller boutique western wear suit with detailed stitching and accessories."
+  },
+  {
+    "id": 66,
+    "design_no": "MC35382414",
+    "name": "AT SELECTION Luxury Satin Western Suit D.No MC35382414",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Premium Cotton Lycra Blend",
+    "colors": [
+      "Golden Yellow",
+      "Deep Maroon",
+      "Navy Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_8.jpg",
+    "description": "Stylish 2-piece western pant and top set with premium hand feel."
+  },
+  {
+    "id": 67,
+    "design_no": "MC36233292",
+    "name": "AT SELECTION Embroidered Denim Jacket & Pants D.No MC36233292",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Soft Washed Denim with Ribbed Top",
+    "colors": [
+      "Classic Blue",
+      "Ice Blue",
+      "Black"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_9.jpg",
+    "description": "High-demand casual denim pant and top set with elasticated waistband."
+  },
+  {
+    "id": 68,
+    "design_no": "44006-Denim",
+    "name": "AT SELECTION Denim Top Jacket 3-Piece Set D.No 44006",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Denim & Twill 3-Piece Set",
+    "colors": [
+      "Denim Blue & Khaki",
+      "Black & Olive",
+      "Navy & Grey"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_10.jpg",
+    "description": "Trendy 3-piece denim jacket, top, and cargo pants set."
+  },
+  {
+    "id": 69,
+    "design_no": "Capri-Top-11",
+    "name": "AT SELECTION Designer Capri & Top Set",
+    "category": "Western Wear",
+    "size_ratio": "18x20 (Toddler Set)",
+    "fabric_type": "Soft Cotton Lycra Rib",
+    "colors": [
+      "Pastel Pink",
+      "Sky Blue",
+      "Lemon Yellow"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_11.jpg",
+    "description": "Cute toddler capri and printed top set with comfortable waistband."
+  },
+  {
+    "id": 70,
+    "design_no": "Western-12",
+    "name": "AT SELECTION Elegant Western Party Wear Set",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Premium Cotton Twill",
+    "colors": [
+      "Wine Burgundy",
+      "Navy Blue",
+      "Olive"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_12.jpg",
+    "description": "High-street fashion western wear co-ord set."
+  },
+  {
+    "id": 71,
+    "design_no": "MC36148348",
+    "name": "AT SELECTION Elegant Blazer & Culotte Set D.No MC36148348",
+    "category": "Western Wear",
+    "size_ratio": "18x20 (3 Year Girls Wear)",
+    "fabric_type": "Cotton Lycra & Stretch Twill",
+    "colors": [
+      "Peach Gold",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_13.jpg",
+    "description": "Premium 3-year toddler western pant top set with comfortable fit."
+  },
+  {
+    "id": 72,
+    "design_no": "MC34158394",
+    "name": "AT SELECTION Pleated Peplum & Trouser Set D.No MC34158394",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Crepe & Cotton Lycra",
+    "colors": [
+      "Rose Coral",
+      "Lavender",
+      "Aqua Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_14.jpg",
+    "description": "Chic peplum top and trouser pant set with contrast belt."
+  },
+  {
+    "id": 73,
+    "design_no": "MC38213272",
+    "name": "AT SELECTION Urban Streetwear Cargo Co-Ord D.No MC38213272",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Cotton Cargo Twill",
+    "colors": [
+      "Khaki Beige",
+      "Military Olive",
+      "Slate Grey"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_15.jpg",
+    "description": "Multi-pocket urban cargo pant and graphic crop top set."
+  },
+  {
+    "id": 74,
+    "design_no": "MC38198348",
+    "name": "AT SELECTION Party Wear Shimmer Western Set D.No MC38198348",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Shimmer Lycra & Crepe",
+    "colors": [
+      "Rani Pink",
+      "Teal Blue",
+      "Mustard Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_16.jpg",
+    "description": "Dazzling western party wear 2-piece pant set."
+  },
+  {
+    "id": 75,
+    "design_no": "MC34124372",
+    "name": "AT SELECTION Tiered Western Tunic Set D.No MC34124372",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Soft Cotton Lycra & Crepe Blend",
+    "colors": [
+      "Pastel Peach",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_17.jpg",
+    "description": "Premium fashion collection western tunic and pants set."
+  },
+  {
+    "id": 76,
+    "design_no": "MC31717370",
+    "name": "AT SELECTION Pastel Summer Skirt Set D.No MC31717370",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Cotton Twill & Soft Rib",
+    "colors": [
+      "Blush Pink",
+      "Mint Green",
+      "Lemon"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_18.jpg",
+    "description": "Lightweight breathable 2-piece summer set."
+  },
+  {
+    "id": 77,
+    "design_no": "Western-19",
+    "name": "AT SELECTION Contemporary Casual Western Set",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Stretch Cotton Lycra",
+    "colors": [
+      "Wine Burgundy",
+      "Navy Blue",
+      "Charcoal"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_19.jpg",
+    "description": "Modern casual western wear ensemble."
+  },
+  {
+    "id": 78,
+    "design_no": "MC35372402-Big",
+    "name": "AT SELECTION Modern Floral Western Co-Ord D.No MC35372402",
+    "category": "Western Wear",
+    "size_ratio": "34x38 (Set of 3 Pcs)",
+    "fabric_type": "Crepe Lycra Blend",
+    "colors": [
+      "Olive Beige",
+      "Navy Blue",
+      "Dusty Pink"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_20.jpg",
+    "description": "Style, comfort, and elegance western wear co-ord set in big girl sizes."
+  },
+  {
+    "id": 79,
+    "design_no": "MC35372402-Kids",
+    "name": "AT SELECTION Designer Western Tunic & Pants D.No MC35372402",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Crepe Lycra Blend",
+    "colors": [
+      "Rose Dust",
+      "Teal Blue",
+      "Charcoal"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_21.jpg",
+    "description": "Trending western wear pant set in kids size bundle."
+  },
+  {
+    "id": 80,
+    "design_no": "MC30362402",
+    "name": "AT SELECTION 3-Piece Designer Blazer & Trousers Set D.No MC30362402",
+    "category": "2Pc Set",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Premium Cotton Lycra & Stretch Twill",
+    "colors": [
+      "Olive Beige",
+      "Navy Blue",
+      "Dusty Pink"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_1.jpg",
+    "description": "Smart casual western 3-piece formal pant and coat ensemble."
+  },
+  {
+    "id": 81,
+    "design_no": "MC30362402-B",
+    "name": "AT SELECTION 3-Piece Western Suit Set D.No MC30362402",
+    "category": "2Pc Set",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Premium Cotton Lycra & Stretch Twill",
+    "colors": [
+      "Rose Dust",
+      "Teal Blue",
+      "Charcoal"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_2.jpg",
+    "description": "Trending Korean-style western wear suit set with high-density fabric touch."
+  },
+  {
+    "id": 82,
+    "design_no": "MC34164414",
+    "name": "AT SELECTION Casual Denim Co-Ord Set D.No MC34164414",
+    "category": "2Pc Set",
+    "size_ratio": "22x30 (Set of 5 Pcs)",
+    "fabric_type": "Soft Washed Denim & Cotton Rib Inner",
+    "colors": [
+      "Classic Blue Denim",
+      "Ice Washed Blue",
+      "Midnight Black"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_3.jpg",
+    "description": "High-street casual jacket and trouser set with elasticated waistband."
+  },
+  {
+    "id": 83,
+    "design_no": "MC44003388",
+    "name": "AT SELECTION Chic Jumpsuit with Belt D.No MC44003388",
+    "category": "2Pc Set",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Crepe Lycra Blend with Golden Buckle Sash",
+    "colors": [
+      "Maroon Wine",
+      "Navy Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_4.jpg",
+    "description": "Modern western styling jumpsuit with breathable fabric and tailored fit."
+  },
+  {
+    "id": 84,
+    "design_no": "44006",
+    "name": "AT SELECTION High-Street Cargo & Top Ensemble D.No 44006",
+    "category": "2Pc Set",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Cotton Twill Cargo & Ribbed Crop Top",
+    "colors": [
+      "Khaki Beige",
+      "Military Olive",
+      "Slate Grey"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_full_10.jpg",
+    "description": "Top-selling multi-pocket streetwear cargo set with adjustable drawstrings."
+  },
+  {
+    "id": 85,
+    "design_no": "MC2270686",
+    "name": "AT SELECTION Traditional Pure Silk Pattu Pavadai D.No MC2270686",
+    "category": "Pattu & Ethnic",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Heritage Kanchipuram Silk with Temple Zari Border",
+    "colors": [
+      "Kili Green & Pink",
+      "Maroon & Golden Yellow",
+      "Peacock Blue & Orange"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/pattu_ats_701.jpg",
+    "description": "Classic South Indian festival pattu lehenga pavadai set with rich golden zari borders and cotton lining."
+  },
+  {
+    "id": 86,
+    "design_no": "MK13068488",
+    "name": "AT SELECTION South Traditional Kanchi Border Lehenga D.No MK13068488",
+    "category": "Pattu & Ethnic",
+    "size_ratio": "24x28 (Set of 3 Pcs)",
+    "fabric_type": "Soft Art Silk & Jacquard Weave",
+    "colors": [
+      "Magenta & Mustard",
+      "Teal & Crimson",
+      "Emerald & Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/pattu_ats_702.jpg",
+    "description": "Authentic festive ethnic wear featuring traditional gold motifs, matching choli blouse, and soft inner."
+  },
+  {
+    "id": 87,
+    "design_no": "Pattu-03",
+    "name": "AT SELECTION Grand Temple Border Silk Pavadai Set",
+    "category": "Pattu & Ethnic",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Banarasi Silk Blend with Gold Zari Border",
+    "colors": [
+      "Ruby Red & Gold",
+      "Peacock Green & Purple",
+      "Sunset Orange & Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/pattu_ats_703.jpg",
+    "description": "High-demand wedding festive attire with rich jacquard weave, comfortable fit, and breathable cotton inner."
+  },
+  {
+    "id": 88,
+    "design_no": "MK9624358",
+    "name": "AT SELECTION Royal Gold Zari Weave Pattu Pavadai D.No MK9624358",
+    "category": "Pattu & Ethnic",
+    "size_ratio": "24x28 (Set of 3 Pcs)",
+    "fabric_type": "Art Silk Brocade with Zari Needlework",
+    "colors": [
+      "Bottle Green & Red",
+      "Royal Blue & Pink",
+      "Wine & Mustard"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/pattu_ats_704.jpg",
+    "description": "Traditional kids ethnic lehenga set with metallic zari border detailing and contrast dupatta."
+  },
+  {
+    "id": 89,
+    "design_no": "Pattu-05",
+    "name": "AT SELECTION Traditional Brocade Jacquard Pavadai Ensemble",
+    "category": "Pattu & Ethnic",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Jacquard Silk with Gold Weave Flare",
+    "colors": [
+      "Mustard Yellow & Maroon",
+      "Pink & Teal",
+      "Purple & Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/pattu_ats_705.jpg",
+    "description": "Bestseller traditional festival special pavadai with intricate temple weave and premium stitch."
+  },
+  {
+    "id": 90,
+    "design_no": "Pattu-06",
+    "name": "AT SELECTION Festive South Silk Pattu Pavadai Set",
+    "category": "Pattu & Ethnic",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Soft Kanchi Silk Blend",
+    "colors": [
+      "Emerald Green & Rani Pink",
+      "Coral Orange & Gold",
+      "Navy & Red"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/pattu_ats_706.jpg",
+    "description": "Rich festive ethnic dress with traditional border work, full flare circumference, and inner lining."
+  },
+  {
+    "id": 91,
+    "design_no": "SIN07",
+    "name": "AT SELECTION Designer Embroidered Crop Top & Flared Choli Set D.No SIN07",
+    "category": "Crop Top & Choli",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Georgette & Embroidered Choli with Flared Skirt",
+    "colors": [
+      "Maroon Wine",
+      "Navy Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/croptop_ats_601.jpg",
+    "description": "Premium wholesale girls festive crop top choli set with intricate golden zari embroidery, micro-pleat flare, and smooth inner lining."
+  },
+  {
+    "id": 92,
+    "design_no": "SIN07-B",
+    "name": "AT SELECTION Royal Mirror-Work Festive Crop Top Set D.No SIN07",
+    "category": "Crop Top & Choli",
+    "size_ratio": "36x40 (Set of 3 Pcs)",
+    "fabric_type": "Silk Blend Bodice & Multi-Tier Net Choli Skirt",
+    "colors": [
+      "Rani Pink",
+      "Teal Blue",
+      "Mustard Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/croptop_ats_602.jpg",
+    "description": "Grand party wear crop top set with dazzling mirror-work accents, layered flare, and matching dupatta."
+  },
+  {
+    "id": 93,
+    "design_no": "SIN01",
+    "name": "AT SELECTION Boutique Floral Zari Crop Top Ensemble D.No SIN01",
+    "category": "Crop Top & Choli",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Premium Organza & Heavy Threadwork Choli",
+    "colors": [
+      "Pastel Pink",
+      "Sky Blue",
+      "Lavender"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/croptop_ats_603.jpg",
+    "description": "Sophisticated floral zari threadwork crop top with voluminous organza choli skirt and comfortable lining."
+  },
+  {
+    "id": 94,
+    "design_no": "HL5699",
+    "name": "AT SELECTION Handcrafted Sequins Crop Top & Skirt D.No HL5699",
+    "category": "Crop Top & Choli",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Chinon Silk & Shimmer Net Flare",
+    "colors": [
+      "Ruby Red",
+      "Royal Blue",
+      "Golden Mustard"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/croptop_ats_604.jpg",
+    "description": "High-demand boutique styling crop top with handcrafted sequins bodice and flared pleated choli skirt."
+  },
+  {
+    "id": 95,
+    "design_no": "CropTop-05",
+    "name": "AT SELECTION Grand Festive Party Crop Top & Choli",
+    "category": "Crop Top & Choli",
+    "size_ratio": "24x34 & 36x40",
+    "fabric_type": "Jacquard Silk & Georgette Flared Lehenga",
+    "colors": [
+      "Wine Burgundy",
+      "Midnight Blue",
+      "Emerald Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/croptop_ats_605.jpg",
+    "description": "Showstopper wedding reception crop top and choli dress with premium fabric touch, zari embroidery, and multi-layer bounce."
+  },
+  {
+    "id": 96,
+    "design_no": "MK19083598",
+    "name": "AT SELECTION Traditional Mirror Embroidered Choli Set D.No MK19083598",
+    "category": "Crop Top & Choli",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Soft Art Silk & Embroidered Net Bodice",
+    "colors": [
+      "Crimson Red",
+      "Peach Gold",
+      "Turquoise"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/croptop_ats_606.jpg",
+    "description": "Exclusive festival special crop top choli set featuring rich intricate golden embroidery, tiered micro-flare, and soft inner lining."
+  },
+  {
+    "id": 97,
+    "design_no": "MK19084546",
+    "name": "AT SELECTION Designer Festive Choli Lehenga Ensemble D.No MK19084546",
+    "category": "Crop Top & Choli",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Georgette with Heavy Zari Work & Cancan Flare",
+    "colors": [
+      "Golden Beige & Pink",
+      "Turquoise Blue",
+      "Coral Orange"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/croptop_ats_607.jpg",
+    "description": "Bestseller festive designer choli lehenga set with opulent gold zari motifs, full circular flare, and designer blouse."
+  },
+  {
+    "id": 98,
+    "design_no": "ZA739630-A",
+    "name": "AT SELECTION Designer Georgette Kurti & Flared Plazo Set D.No ZA739630",
+    "category": "Plazo & Sharara",
+    "size_ratio": "36x40 (Set of 3 Pcs)",
+    "fabric_type": "Heavy Faux Georgette Bodice & Santoon Inner with Flared Plazo",
+    "colors": [
+      "Maroon Wine",
+      "Navy Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/plazo_za739630_1.jpg",
+    "description": "Exclusive festive designer kurti and flared plazo set with detailed golden zari embroidery, side tassels, and matching dupatta."
+  },
+  {
+    "id": 99,
+    "design_no": "ZA739630-B",
+    "name": "AT SELECTION Festive Embroidered Kurti & Plazo Suit Set D.No ZA739630",
+    "category": "Plazo & Sharara",
+    "size_ratio": "36x40 (Set of 3 Pcs)",
+    "fabric_type": "Silk Georgette & Embroidered Border Plazo",
+    "colors": [
+      "Rani Pink",
+      "Teal Turquoise",
+      "Mustard Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/plazo_za739630_2.jpg",
+    "description": "High-demand boutique styling girls plazo set featuring rich sequence threadwork, round neck, and comfortable inner lining."
+  },
+  {
+    "id": 100,
+    "design_no": "BG2070585",
+    "name": "AT SELECTION Princess Cut Embroidered Sharara & Peplum Set D.No BG2070585",
+    "category": "Plazo & Sharara",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Net & Satin Inner with Multi-Tier Sharara Flare",
+    "colors": [
+      "Rose Gold",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/plazo_bg2070585.jpg",
+    "description": "Grand wedding party wear peplum top and multi-layer tiered sharara pants with delicate stone and zari needlework."
+  },
+  {
+    "id": 101,
+    "design_no": "ZA739630-C",
+    "name": "AT SELECTION Luxury Designer Zari Work Plazo Suit Set D.No ZA739630",
+    "category": "Plazo & Sharara",
+    "size_ratio": "36x40 (Set of 3 Pcs)",
+    "fabric_type": "Premium Georgette & Micro Santoon Flared Plazo",
+    "colors": [
+      "Ruby Crimson",
+      "Emerald Green",
+      "Royal Purple"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/plazo_za739630_3.jpg",
+    "description": "Showstopper boutique festive party wear plazo suit with intricate neckline embroidery, full flare, and premium finish."
+  },
+  {
+    "id": 102,
+    "design_no": "MK30008412",
+    "name": "AT SELECTION Designer Embroidered Sharara & Peplum Set D.No MK30008412",
+    "category": "Plazo & Sharara",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Chinon Silk & Micro Net with Flared Sharara",
+    "colors": [
+      "Maroon Wine",
+      "Navy Blue",
+      "Bottle Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/plazo_mk30008412_kids.jpg",
+    "description": "Exquisite festive peplum top with fine zari threadwork and matching multi-tier flared sharara pants."
+  },
+  {
+    "id": 103,
+    "design_no": "MK30008412-B",
+    "name": "AT SELECTION Festive Zari Peplum Kurti & Flared Sharara Suit D.No MK30008412",
+    "category": "Plazo & Sharara",
+    "size_ratio": "34x38 (Set of 3 Pcs)",
+    "fabric_type": "Silk Georgette & Flared Cancan Sharara",
+    "colors": [
+      "Rani Pink",
+      "Teal Blue",
+      "Mustard Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/plazo_mk30008412_big.jpg",
+    "description": "High-demand boutique styling girls sharara suit featuring rich needlework, round neck, and inner lining."
+  },
+  {
+    "id": 104,
+    "design_no": "AK30010480",
+    "name": "AT SELECTION Royal Embroidered Silk Kurti & Plazo Ensemble D.No AK30010480",
+    "category": "Plazo & Sharara",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Art Silk & Heavy Georgette Flared Plazo",
+    "colors": [
+      "Ruby Crimson",
+      "Emerald Green",
+      "Peacock Blue"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/plazo_ats_803.jpg",
+    "description": "Grand festive special kurti and flared plazo ensemble with all-over golden zari brocade and dupatta."
+  },
+  {
+    "id": 105,
+    "design_no": "12480-Kids",
+    "name": "AT SELECTION Boutique Floral Zari Plazo Suit Set D.No 12480",
+    "category": "Plazo & Sharara",
+    "size_ratio": "24x34 (Set of 6 Pcs)",
+    "fabric_type": "Heavy Faux Georgette & Santoon Inner",
+    "colors": [
+      "Pastel Peach",
+      "Sky Blue",
+      "Mint Green"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/plazo_ats_804.jpg",
+    "description": "Showstopper boutique party wear plazo suit with intricate neckline embroidery and full circumference flare."
+  },
+  {
+    "id": 106,
+    "design_no": "12480",
+    "name": "AT SELECTION Grand Party Wear Kurti & Flared Plazo Set D.No 12480",
+    "category": "Plazo & Sharara",
+    "size_ratio": "34x38 (Set of 3 Pcs)",
+    "fabric_type": "Premium Georgette with Heavy Zari Border",
+    "colors": [
+      "Wine Burgundy",
+      "Midnight Blue",
+      "Olive Gold"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/plazo_ats_12480.jpg",
+    "description": "Luxury festive girls kurti and flared plazo set with handcrafted sequins bodice and soft inner lining."
+  },
+  {
+    "id": 107,
+    "design_no": "SN12147295",
+    "name": "AT SELECTION Designer Floral Tunic & Pants Western Set D.No SN12147295",
+    "category": "Western Wear",
+    "size_ratio": "22x32 (Set of 6 Pcs)",
+    "fabric_type": "Premium Soft Cotton Linen & Stretch Pants",
+    "colors": [
+      "Black Floral Set",
+      "White Floral Set"
+    ],
+    "price_label": "Wholesale Rate",
+    "image": "images/western_sn12147295.jpg",
+    "description": "Premium AT SELECTION girls western wear 2-piece floral tunic and tailored pants co-ord set with adjustable tie belt."
   }
 ]
