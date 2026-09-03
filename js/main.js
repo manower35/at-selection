@@ -163,10 +163,15 @@ function renderProducts(products) {
 
   if (products.length === 0) {
     gridContainer.innerHTML = `
-      <div style="grid-column: 1 / -1; text-align: center; padding: 50px 20px; background: rgba(255,255,255,0.02); border: 1px dashed rgba(212,175,55,0.3); border-radius: 12px;">
-        <i class="fa-solid fa-box-open text-gold" style="font-size: 44px; margin-bottom: 15px;"></i>
-        <h3 class="text-gold font-serif text-MD">AT SELECTION Catalog Ready</h3>
-        <p class="text-SM text-muted" style="margin-top: 6px;">All sample items permanently removed. Ready to display your fresh stock photos!</p>
+      <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: rgba(212,175,55,0.04); border: 1px dashed rgba(212,175,55,0.35); border-radius: 14px;">
+        <i class="fa-solid fa-magnifying-glass-chart text-gold" style="font-size: 46px; margin-bottom: 16px; opacity: 0.9;"></i>
+        <h3 class="text-gold font-serif text-LG" style="margin-bottom: 6px;">No Matching Designs Found</h3>
+        <p class="text-SM text-muted" style="margin: 8px auto 20px auto; max-width: 500px; line-height: 1.5;">
+          Try searching by <strong>Design Code</strong> (e.g. <em>SN12147295, MC30362402, SIN07, 12480</em>), <strong>Category</strong> (<em>Frocks, Western, Crop Top, Plazo</em>), or <strong>Size</strong> (<em>24x34, 22x32</em>).
+        </p>
+        <button onclick="window.atsResetSearch()" class="btn btn-gold" style="padding: 10px 24px; font-weight: 700; border-radius: 8px;">
+          <i class="fa-solid fa-arrows-rotate"></i> View All 109 Designs
+        </button>
       </div>
     `;
     return;
@@ -249,10 +254,17 @@ function renderProducts(products) {
 
 function setupFilterPills() {
   const filterBtns = document.querySelectorAll(".filter-btn");
+  const searchInputs = document.querySelectorAll(".search-sync-input, #search-input");
+  const clearButtons = document.querySelectorAll(".nav-search-clear-btn, .mobile-search-clear-btn, #catalog-search-clear-btn");
+
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       filterBtns.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
+
+      // Clear search inputs when explicitly clicking category tab
+      searchInputs.forEach((input) => (input.value = ""));
+      clearButtons.forEach((b) => (b.style.display = "none"));
 
       const selectedCategory = btn.getAttribute("data-filter");
       if (selectedCategory === "all") {
@@ -274,14 +286,22 @@ function setupFilterPills() {
   });
 }
 
+// Intelligent Normalized Text Helper
+function normalizeAtsSearchStr(str) {
+  if (!str) return "";
+  return String(str).toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
 function setupSearchInput() {
   const searchInputs = document.querySelectorAll(".search-sync-input, #search-input");
   const clearButtons = document.querySelectorAll(".nav-search-clear-btn, .mobile-search-clear-btn, #catalog-search-clear-btn");
+  const filterBtns = document.querySelectorAll(".filter-btn");
 
   if (!searchInputs.length) return;
 
   function performFilter(rawQuery, sourceElement) {
     const query = rawQuery.toLowerCase().trim();
+    const cleanQ = normalizeAtsSearchStr(query);
 
     // Sync query across all search inputs
     searchInputs.forEach((input) => {
@@ -295,25 +315,70 @@ function setupSearchInput() {
       btn.style.display = query.length > 0 ? "flex" : "none";
     });
 
-    // Filter products
+    // If query is empty, show all products
+    if (!query) {
+      renderProducts(allProducts);
+      return;
+    }
+
+    // Reset filter pills to "All" when actively searching
+    filterBtns.forEach((b) => {
+      if (b.getAttribute("data-filter") === "all") {
+        b.classList.add("active");
+      } else {
+        b.classList.remove("active");
+      }
+    });
+
+    // Extract search tokens (split by spaces, dashes, commas, asterisks)
+    const tokens = query.split(/[\s,\-_*]+/).filter((t) => t.length > 0);
+
+    // Intelligent Multi-Keyword & Normalized Search
     const filtered = allProducts.filter((p) => {
       const dno = (p.design_no || "").toLowerCase();
+      const cleanDno = normalizeAtsSearchStr(dno);
       const name = (p.name || "").toLowerCase();
       const cat = (p.category || "").toLowerCase();
+      const cleanCat = normalizeAtsSearchStr(cat);
       const fabric = (p.fabric_type || "").toLowerCase();
       const size = (p.size_ratio || "").toLowerCase();
+      const cleanSize = normalizeAtsSearchStr(size);
       const colors = (Array.isArray(p.colors) ? p.colors.join(" ") : "").toLowerCase();
       const desc = (p.description || "").toLowerCase();
 
-      return (
-        dno.includes(query) ||
-        name.includes(query) ||
-        cat.includes(query) ||
-        fabric.includes(query) ||
-        size.includes(query) ||
-        colors.includes(query) ||
-        desc.includes(query)
-      );
+      // Build rich searchable text block
+      let fullText = `${dno} ${cleanDno} ${name} ${cat} ${cleanCat} ${fabric} ${size} ${cleanSize} ${colors} ${desc}`;
+
+      // Category Synonyms & Aliases expansion
+      if (query.includes("frock") || query.includes("dress") || query.includes("gown")) {
+        if (cat.includes("frock")) fullText += " frocks dresses gowns party bombay";
+      }
+      if (query.includes("crop") || query.includes("choli") || cleanQ.includes("croptop") || query.includes("lehenga")) {
+        if (cat.includes("crop")) fullText += " crop top choli croptop lehenga skirt";
+      }
+      if (query.includes("western") || query.includes("pant") || query.includes("suit") || query.includes("blazer") || query.includes("cargo") || query.includes("denim") || query.includes("coord")) {
+        if (cat.includes("western") || cat.includes("2pc")) fullText += " western wear 2pc suit coat co-ord cargo denim";
+      }
+      if (query.includes("plazo") || query.includes("sharara") || query.includes("palazzo") || query.includes("gharara")) {
+        if (cat.includes("plazo")) fullText += " plazo sharara palazzo kurti gharara";
+      }
+      if (query.includes("pattu") || query.includes("ethnic") || query.includes("langa") || query.includes("traditional")) {
+        if (cat.includes("pattu")) fullText += " pattu ethnic traditional langa pavada silk";
+      }
+      if (query.includes("2pc") || query.includes("2 piece") || query.includes("two piece") || query.includes("set")) {
+        if (cat.includes("2pc")) fullText += " 2pc 2 piece set pair top pant";
+      }
+
+      // 1. Direct design code match (exact or normalized substring)
+      if (cleanQ && (cleanDno.includes(cleanQ) || cleanQ.includes(cleanDno))) {
+        return true;
+      }
+
+      // 2. All tokens must match somewhere in the enriched text
+      return tokens.every((t) => {
+        const cleanT = normalizeAtsSearchStr(t);
+        return fullText.includes(t) || (cleanT && fullText.includes(cleanT));
+      });
     });
 
     renderProducts(filtered);
@@ -356,6 +421,17 @@ function setupSearchInput() {
       renderProducts(allProducts);
     });
   });
+
+  // Global reset helper
+  window.atsResetSearch = function () {
+    searchInputs.forEach((input) => (input.value = ""));
+    clearButtons.forEach((b) => (b.style.display = "none"));
+    filterBtns.forEach((b) => {
+      if (b.getAttribute("data-filter") === "all") b.classList.add("active");
+      else b.classList.remove("active");
+    });
+    renderProducts(allProducts);
+  };
 }
 
 // Global handler so inline onclick calls work cleanly
