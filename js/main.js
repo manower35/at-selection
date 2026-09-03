@@ -1,70 +1,9 @@
 
-/* --------------------------------------------------------------------------
-   0. VIP WHOLESALE B2B PASSCODE CONTROLLER (COMPETITOR SHIELD)
-   -------------------------------------------------------------------------- */
-const VALID_VIP_PASSCODES = ["ats2026", "2026", "7860", "ats99", "ahmer2026", "open", "owner", "wa", "direct", "1"];
-
-function initVipGate() {
-  const overlay = document.getElementById("vipGateOverlay");
-  const form = document.getElementById("vipPinForm");
-  const input = document.getElementById("vipPinInput");
-  const errorMsg = document.getElementById("vipErrorMsg");
-  if (!overlay) return;
-
-  // 1. Check URL parameters for Owner-shared link (?vip=ats2026, ?open=1, ?ref=owner, etc.)
-  const params = new URLSearchParams(window.location.search);
-  const urlKey = (params.get("vip") || params.get("pin") || params.get("access") || params.get("open") || params.get("ref") || params.get("link") || "").toLowerCase().trim();
-
-  if (urlKey && VALID_VIP_PASSCODES.includes(urlKey)) {
-    localStorage.setItem("ats_vip_auth", urlKey);
-    overlay.style.display = "none";
-    console.log("[VIP AUTH] Auto-unlocked via 1-tap WhatsApp VIP URL!");
-    return;
-  }
-
-  // 2. Check LocalStorage for existing verified session
-  const storedAuth = (localStorage.getItem("ats_vip_auth") || "").toLowerCase().trim();
-  if (storedAuth && VALID_VIP_PASSCODES.includes(storedAuth)) {
-    overlay.style.display = "none";
-    console.log("[VIP AUTH] Verified session loaded from storage.");
-    return;
-  }
-
-  // 3. Unauthorized: Show VIP Gate
-  overlay.style.display = "flex";
-
-  // Handle Form Submit / Unlock Button Click
-  if (form && input) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const entered = input.value.toLowerCase().trim();
-      if (VALID_VIP_PASSCODES.includes(entered)) {
-        localStorage.setItem("ats_vip_auth", entered);
-        if (errorMsg) errorMsg.style.display = "none";
-        
-        // Smooth unlock transition
-        overlay.style.transition = "opacity 0.3s ease";
-        overlay.style.opacity = "0";
-        setTimeout(() => {
-          overlay.style.display = "none";
-        }, 300);
-      } else {
-        if (errorMsg) {
-          errorMsg.style.display = "block";
-          input.classList.add("shake-anim");
-          setTimeout(() => input.classList.remove("shake-anim"), 500);
-        }
-      }
-    });
-  }
-}
-
 /* ==========================================================================
    AT SELECTION — Main Interactivity Script
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-  initVipGate();
   initMobileMenu();
   initFaqAccordion();
   initLightbox();
