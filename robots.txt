@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# OpenAI / ChatGPT Search Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Perplexity AI Search Crawler
+User-agent: PerplexityBot
+Allow: /
+
+# Google Gemini / Extended AI Search Crawler
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic Claude AI Search Crawler
+User-agent: ClaudeBot
+Allow: /
+
+# Microsoft Copilot & Bing AI Crawler
+User-agent: Bingbot
+Allow: /
+
+# Sitemaps & LLM Context Files
+Sitemap: https://www.atselection.in/sitemap.xml
+# LLM Knowledge Standard: https://www.atselection.in/llms.txt
