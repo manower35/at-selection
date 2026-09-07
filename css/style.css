@@ -343,14 +343,15 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .logo-box {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .logo-text-wrap {
@@ -360,8 +361,8 @@ img {
 }
 
 .navbar-logo-img {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
   border-radius: 50%;
   border: 1px solid var(--primary-gold);
@@ -376,40 +377,48 @@ img {
 
 .logo-text-title {
   font-family: 'Cinzel', serif;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: 1.2px;
   color: var(--primary-gold);
   line-height: 1.1;
   margin-bottom: 2px;
+  white-space: nowrap;
 }
 
 .logo-text-subtitle {
-  font-size: 10px;
-  letter-spacing: 1.6px;
+  font-size: 9.5px;
+  letter-spacing: 1.4px;
   color: #a1a1aa;
   text-transform: uppercase;
   font-weight: 500;
   margin: 0;
+  white-space: nowrap;
+}
+
+.main-menu {
+  flex-shrink: 0;
 }
 
 .main-menu ul {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .main-menu a {
-  font-weight: 500;
-  font-size: 14px;
-  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 6px 10px;
   color: #e4e4e7;
   text-decoration: none;
   transition: all 0.25s ease;
   border-radius: 6px;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .main-menu a:hover {
@@ -420,7 +429,7 @@ img {
 .nav-action-buttons {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   flex-shrink: 0;
 }
 
@@ -1396,12 +1405,12 @@ body.cart-open #mobile-floating-cart-bar {
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 992px) {
   .main-menu {
-    display: none;
+    display: none !important;
   }
   .hamburger-button {
-    display: block;
+    display: block !important;
   }
   .hero-slider-container {
     max-width: 320px;
@@ -1773,9 +1782,40 @@ body.cart-open #mobile-floating-cart-bar {
   position: relative;
   display: flex;
   align-items: center;
-  flex: 1;
-  max-width: 360px;
-  margin: 0 20px;
+  flex: 0 1 240px;
+  max-width: 250px;
+  min-width: 130px;
+  margin: 0 10px;
+}
+
+@media (max-width: 1220px) and (min-width: 993px) {
+  .nav-search-container {
+    max-width: 160px;
+    margin: 0 6px;
+  }
+  .main-menu ul {
+    gap: 6px;
+  }
+  .main-menu a {
+    font-size: 12.5px;
+    padding: 5px 8px;
+  }
+  .logo-text-title {
+    font-size: 17px;
+  }
+  .logo-text-subtitle {
+    font-size: 8.5px;
+  }
+  .cart-icon-btn {
+    padding: 7px 11px;
+    font-size: 12.5px;
+    gap: 6px;
+  }
+  .btn-whatsapp {
+    padding: 7px 13px !important;
+    font-size: 12.5px !important;
+    white-space: nowrap !important;
+  }
 }
 
 .nav-search-input {
